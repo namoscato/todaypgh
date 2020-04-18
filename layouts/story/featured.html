@@ -1,0 +1,9 @@
+<a class="story" href="{{ .RelPermalink }}">
+    <div class="story-image is-featured" style="background-image: url('{{ .RelPermalink }}cover.jpg')"></div>
+    <div class="content">
+        <div class="story-title">
+            <h2>One Day,</h2>
+            <h1>{{ substr .Title (len "One day, ") }}</h1>
+        </div>
+    </div>
+</a>

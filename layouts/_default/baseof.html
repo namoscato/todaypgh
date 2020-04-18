@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}favicon-16x16.png">
+    <link rel="manifest" href="{{ .Site.BaseURL }}site.webmanifest">
+    <link rel="mask-icon" href="{{ .Site.BaseURL }}safari-pinned-tab.svg" color="#d64e2a">
+    <meta name="msapplication-TileColor" content="#d64e2a">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="//fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    {{ $style := resources.Get "style.scss" | resources.ToCSS (dict "targetPath" "style.css" "outputStyle" "compressed") }}
+    <link href="{{ $style.Permalink }}" rel="stylesheet">
+</head>
+<body>
+{{ block "body" . }}
+<header id="header" class="layout">
+    <aside class="layout-secondary">
+        <a href="{{ .Site.BaseURL }}" class="logo is-grayscale">
+            <h1>Today<span class="is-color-gold">PGH</span></h1>
+        </a>
+    </aside>
+    <section class="layout-primary">
+        <div class="content">
+            {{ block "title" . }}
+            <h1>{{ .Title }}</h1>
+            {{ end }}
+        </div>
+    </section>
+</header>
+{{ block "content" . }}
+{{ .Content }}
+{{ end }}
+{{ end }}
+<footer id="footer" class="layout">
+    <aside class="layout-secondary">
+        <img alt="Bridge" id="footer-bridge" src="{{ .Site.BaseURL }}img/bridge.png" width="600">
+    </aside>
+    <section class="layout-primary">
+        <div id="footer-content" class="content">
+            <p>To all educators, change makers and dreamers...</p>
+            <p>Thank you for being the thinkers of Today and One Day. Our hope is to compile a collection of stories from educators around Pittsburgh. To inspire. To lift up the profession. To provide support and inspire the next generation of educators.</p>
+            <p>Through storytelling, we hope to create mirrors to inspire reflection, windows to generate empathy and bridges to connect one another in support and love.</p>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

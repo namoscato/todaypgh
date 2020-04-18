@@ -1,0 +1,18 @@
+{{ define "title" }}
+<div class="story-title">
+    <h2>One Day,</h2>
+    <h1>{{ substr .Title (len "One day, ") }}</h1>
+</div>
+{{ end }}
+
+{{ define "content" }}
+<div class="story-image" style="background-image: url('{{ .RelPermalink }}cover.jpg')"></div>
+<main class="layout">
+    <aside class="layout-secondary"></aside>
+    <section class="layout-primary">
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </section>
+</main>
+{{ end }}

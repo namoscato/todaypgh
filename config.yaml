@@ -1,0 +1,11 @@
+baseURL: https://www.onedaypgh.org/demo/
+languageCode: en-us
+title: "TodayPGH - Inspirational Stories of Pittsburgh Educators"
+params:
+    description: "Inspirational Stories of Pittsburgh Educators"
+    images:
+        - social-feature.jpg
+disableKinds:
+- RSS
+- taxonomy
+- taxonomyTerm

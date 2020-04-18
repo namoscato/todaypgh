@@ -1,0 +1,30 @@
+{{ define "body" }}
+<main id="body">
+    <div class="layout">
+        <aside class="layout-secondary is-align-right">
+            <div class="layout-secondary-content">
+                <div id="homepage-header">
+                    <div class="logo">
+                        <h1>Today<span class="is-color-gold">PGH</span></h1>
+                        <h2>a project by One Day Pittsburgh</h2>
+                    </div>
+                    <p>TodayPGH tells the stories of educators around Pittsburgh. To inspire. To lift up the profession. To provide support and inspire the next generation of educators.</p>
+                </div>
+            </div>
+        </aside>
+        <section class="layout-primary">
+            {{- with index (where .Site.RegularPages "Type" "story") 0 }}
+            {{ .Render "featured" }}
+            {{ end -}}
+        </section>
+    </div>
+    <ul id="stories">
+        {{- $paginator := .Paginate (after 1 (where .Site.RegularPages "Type" "story")) }}
+        {{- range first 6 $paginator.Pages -}}
+        <li>
+            {{ .Render "summary" }}
+        </li>
+        {{ end -}}
+    </ul>
+</main>
+{{ end }}
