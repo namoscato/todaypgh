@@ -4,6 +4,9 @@ $color-navy: #1f2d6b;
 $color-gold: #ffc862;
 $color-lightblue: #c3ebf7;
 $color-gray: #484a4f;
+$color-lightgray: #62747f;
+
+$transition-duration: 0.3s;
 
 html,
 body {
@@ -18,6 +21,18 @@ body {
 
 p {
     line-height: 1.8;
+}
+
+.utl-mt1_5 {
+    margin-top: 1.5em !important;
+}
+
+.utl-mt2 {
+    margin-top: 2em !important;
+}
+
+.utl-mt3 {
+    margin-top: 3em !important;
 }
 
 #body {
@@ -93,18 +108,37 @@ p {
 
 #footer {
     background-color: $color-lightblue;
-    margin-top: 12rem;
-    padding: 4rem 0;
+    margin-top: 11rem;
+    padding: 4rem 0 0;
 }
 
 #footer-bridge {
-    margin-top: -13rem;
+    background: url('img/bridge.png') center top / 37.5rem 12.84375rem no-repeat;
+    height: 12.84375rem;
+    margin: -12rem auto 0;
     max-width: 100%;
+    width: 37.5rem;
 }
 
-#footer-content {
-    font-style: italic;
-    margin-top: 3rem;
+#footer-copyright {
+    color: $color-lightgray;
+    padding: 2rem;
+    text-align: center;
+
+    > p {
+        font-size: 0.9em;
+        margin-top: 3rem;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: color $transition-duration;
+
+        &:hover {
+            color: darken($color-lightgray, 15);
+        }
+    }
 }
 
 .layout-secondary {
@@ -135,6 +169,7 @@ p {
     > h1 {
         font-family: 'Oswald', sans-serif;
         font-size: 3em;
+        font-weight: 500;
         margin: 0;
         text-transform: uppercase;
     }
@@ -151,11 +186,14 @@ p {
     }
 }
 
-a.logo:hover {
-    color: $color-navy;
+a.logo {
+    &:hover,
+    &:focus {
+        color: $color-navy;
 
-    .is-color-gold {
-        color: $color-gold;
+        .is-color-gold {
+            color: $color-gold;
+        }
     }
 }
 
@@ -175,6 +213,64 @@ a.logo:hover {
     }
 }
 
+.button {
+    background-color: rgba($color-white, .7);
+    border: 1px solid $color-navy;
+    border-radius: 0.3125rem;
+    box-shadow: 1px 1px 0 1px $color-navy;
+    color: $color-navy;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.6em 0.7em 0.7em;
+    margin: 0 1px 1px 0;
+    text-decoration: none;
+    transition: background-color $transition-duration;
+
+    &:hover,
+    &:focus {
+        background-color: $color-white;
+    }
+
+    &:active {
+        box-shadow: none;
+        margin: 1px 0 0 1px;
+    }
+}
+
+.social {
+    font-size: 1.4em;
+    list-style-type: none;
+    margin: 0 -0.5em;
+    padding: 0;
+
+    > li {
+        display: inline-block;
+        margin: 0 0.5em;
+    }
+}
+
+.social-icon > svg {
+    fill: $color-lightgray;
+    height: 1.4em;
+    transition: fill $transition-duration;
+    width: 1.4em;
+}
+
+.social-icon:hover > svg {
+    &.twitter {
+        fill: #1DA1F2;
+    }
+
+    &.instagram {
+        fill: #E4405F;
+    }
+
+    &.facebook {
+        fill: #1877F2;
+    }
+}
+
 .story {
     margin-bottom: 3rem;
 }
@@ -184,7 +280,8 @@ a.story {
     display: block;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
         .story-image {
             filter: brightness(1.08);
         }
@@ -215,7 +312,7 @@ a.story {
     background-size: cover;
     height: 90%;
     position: relative;
-    transition: filter 0.3s;
+    transition: filter $transition-duration;
 
     &.is-featured {
         height: 29em;
@@ -224,16 +321,11 @@ a.story {
 
 .story-title {
     margin-top: 2em;
-    transition: color 0.3s;
+    transition: color $transition-duration;
 
     > h1 {
         line-height: 1.5;
         margin: 0;
-
-        //> a {
-        //    color: inherit;
-        //    text-decoration: none;
-        //}
     }
 
     > h2 {
@@ -241,6 +333,7 @@ a.story {
         color: $color-navy;
         font-family: 'Oswald', sans-serif;
         font-size: 2.5em;
+        font-weight: 500;
         margin: 0 0 0.16em -2rem;
         padding: 0 0 1.7rem 2rem;
         position: relative;
@@ -277,6 +370,24 @@ a.story {
         left: 77%;
         width: 15.625em;
     }
+
+    #footer-copyright {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+        > p {
+            margin: 0;
+
+            > br {
+                display: none;
+            }
+        }
+    }
+
+    .social {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 55rem) {
@@ -308,7 +419,6 @@ a.story {
     #footer-bridge {
         position: absolute;
         right: -16rem;
-        margin-top: -12rem;
         max-width: none;
     }
 
@@ -323,17 +433,12 @@ a.story {
 
     .layout-secondary-content {
         float: right;
-        //max-width: 18.5em;
         text-align: left;
         width: 18.5em;
     }
 
     .layout-secondary.is-align-right {
         text-align: right;
-
-        .layout-secondary-content {
-            //float: right;
-        }
     }
 
     .layout-primary {
