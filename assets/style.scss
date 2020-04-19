@@ -8,6 +8,8 @@ $color-lightgray: #62747f;
 
 $transition-duration: 0.3s;
 
+$content-width: 43.75rem;
+
 html,
 body {
     height: 100%;
@@ -42,7 +44,7 @@ p {
 
 #header {
     overflow: hidden;
-    padding: 1rem 1rem 7rem;
+    padding: 1rem 1rem 6rem;
     position: relative;
 
     &::after {
@@ -81,7 +83,7 @@ p {
 
 #homepage-header {
     margin: 0 auto 2rem;
-    max-width: 43.75rem;
+    max-width: $content-width;
 
     .logo {
         background: url('img/logo.png') right top / 16.375rem 4.404rem no-repeat;
@@ -153,6 +155,17 @@ p {
     color: $color-gray;
 }
 
+.layout-cover {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+.layout-cover-primary,
+.layout-cover-primary-content {
+    height: 100%;
+}
+
 .logo {
     color: $color-navy;
     display: inline-block;
@@ -198,18 +211,23 @@ a.logo {
 }
 
 .content {
-    max-width: 43.75rem;
+    max-width: $content-width;
     margin: 0 auto;
     padding: 0 1em;
 
-    > p {
-        font-size: 1.1em;
+    > h3 {
+        font-size: 1.4em;
+        margin-top: 2rem;
     }
 
-    > h2 {
+    > h4 {
         color: $color-gray;
         font-size: 1.2em;
         margin-top: 2em;
+    }
+
+    > p {
+        font-size: 1.1em;
     }
 }
 
@@ -310,7 +328,7 @@ a.story {
     display: block;
     background-position: center;
     background-size: cover;
-    height: 90%;
+    height: 100%;
     position: relative;
     transition: filter $transition-duration;
 
@@ -350,6 +368,23 @@ a.story {
             width: 2.375rem;
         }
     }
+}
+
+.story-meta {
+    color: $color-gray;
+    line-height: 1.8;
+}
+
+.story-meta-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.story-meta-posted {
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 2em 0 0;
 }
 
 @media (min-width: 37.5rem) {
@@ -426,6 +461,11 @@ a.story {
         display: flex;
     }
 
+    .layout-primary {
+        box-sizing: border-box;
+        flex: 2;
+    }
+
     .layout-secondary {
         flex: 1;
         position: relative;
@@ -441,9 +481,49 @@ a.story {
         text-align: right;
     }
 
-    .layout-primary {
+    .layout-cover {
+        flex-direction: row;
+        height: 80%;
+    }
+
+    .layout-cover-primary {
         box-sizing: border-box;
         flex: 2;
+    }
+
+    .layout-cover-primary-content {
+        margin-left: -2rem;
+    }
+
+    .layout-cover-secondary {
+        background: linear-gradient(180deg, #faf7f0 0%, $color-white 70%);
+        border-top: 1px solid #e9e7e4;
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            background: url('img/bridge.png') right top / 62.5rem 21.40625rem no-repeat;
+            content: '';
+            filter: grayscale(1);
+            height: 21.40625rem;
+            left: -43.3125rem;
+            opacity: 0.7;
+            position: absolute;
+            top: -11.5rem;
+            transform: scaleY(-1);
+            width: 62.5rem;
+            z-index: 0;
+        }
+
+        .content {
+            box-sizing: border-box;
+            margin-right: 2rem;
+            padding: 0 2rem;
+            position: absolute;
+            right: 0;
+            text-align: right;
+        }
     }
 
     .content {

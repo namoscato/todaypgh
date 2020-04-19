@@ -6,13 +6,38 @@
 {{ end }}
 
 {{ define "content" }}
-<div class="story-image" style="background-image: url('{{ .RelPermalink }}cover.jpg')"></div>
-<main class="layout">
+<div class="layout-cover">
+    <aside class="layout-cover-secondary">
+        <div class="content">
+            <h3>{{ .Params.educator.name }}</h3>
+            <div class="story-meta">
+                <ul class="story-meta-list">
+                    <li>
+                        {{ .Params.educator.role }}
+                    </li>
+                    <li>
+                        {{ .Params.educator.school }}
+                    </li>
+                </ul>
+                <p class="story-meta-posted">
+                    posted on
+                    <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                </p>
+            </div>
+        </div>
+    </aside>
+    <section class="layout-cover-primary">
+        <div class="layout-cover-primary-content">
+            <div class="story-image" style="background-image: url('{{ .RelPermalink }}cover.jpg')"></div>
+        </div>
+    </section>
+</div>
+<div class="layout">
     <aside class="layout-secondary"></aside>
     <section class="layout-primary">
         <div class="content">
             {{ .Content }}
         </div>
     </section>
-</main>
+</div>
 {{ end }}
