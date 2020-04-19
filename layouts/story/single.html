@@ -37,6 +37,29 @@
     <section class="layout-primary">
         <div class="content">
             {{ .Content }}
+            <ul class="social story-social">
+                <li>
+                    {{ $queryString := (querify "text" (printf `"%s"` .Title) "url" .Permalink "via" "TodayPGH" "related" "TodayPGH") | safeURL -}}
+                    {{ $href := printf "https://twitter.com/intent/tweet?%s" $queryString -}}
+                    <a class="social-icon" href="{{ $href }}" rel="noopener" target="_blank"  title="Share on Twitter">
+                        {{ partial "social/twitter.html" . }}
+                    </a>
+                </li>
+                <li>
+                    {{ $queryString := (querify "u" .Permalink) | safeURL -}}
+                    {{ $href := printf "https://facebook.com/sharer/sharer.php?%s" $queryString -}}
+                    <a class="social-icon" href="{{ $href }}" rel="noopener" target="_blank" title="Share on Facebook">
+                        {{ partial "social/facebook.html" . }}
+                    </a>
+                </li>
+                <li>
+                    {{ $queryString := (querify "subject" .Title "body" .Permalink) | safeURL -}}
+                    {{ $href := printf "mailto:?%s" $queryString -}}
+                    <a class="social-icon" href="{{ $href }}" rel="noopener" target="_blank" title="Share via email">
+                        {{ partial "social/email.html" . }}
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </div>
