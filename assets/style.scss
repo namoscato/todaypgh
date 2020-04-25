@@ -16,8 +16,8 @@ body {
 }
 
 body {
-    background-color: $color-white;
     color: $color-black;
+    background-color: $color-white;
     font-family: 'Playfair Display', serif;
 }
 
@@ -25,12 +25,8 @@ p {
     line-height: 1.8;
 }
 
-.utl-mt1_5 {
+.utl-mt1-5 {
     margin-top: 1.5em !important;
-}
-
-.utl-mt2 {
-    margin-top: 2em !important;
 }
 
 .utl-mt3 {
@@ -51,8 +47,8 @@ p {
         background: url('img/sun.png') right top / 12.139rem 15rem no-repeat;
         content: '';
         height: 15rem;
-        position: absolute;
         left: 68%;
+        position: absolute;
         top: 0;
         width: 12.139rem;
         z-index: 0;
@@ -204,10 +200,10 @@ p {
     }
 
     > h2 {
-        font-style: italic;
         font-size: 0.915em;
+        font-style: italic;
         font-weight: normal;
-        margin: .6em 0 0;
+        margin: 0.6em 0 0;
     }
 
     .is-color-gold {
@@ -227,8 +223,8 @@ a.logo {
 }
 
 .content {
-    max-width: $content-width;
     margin: 0 auto;
+    max-width: $content-width;
     padding: 0 1em;
 
     > h3 {
@@ -248,7 +244,7 @@ a.logo {
 }
 
 .button {
-    background-color: rgba($color-white, .7);
+    background-color: rgba($color-white, 0.7);
     border: 1px solid $color-navy;
     border-radius: 0.3125rem;
     box-shadow: 1px 1px 0 1px $color-navy;
@@ -256,8 +252,8 @@ a.logo {
     display: inline-block;
     font-weight: 600;
     line-height: 1;
-    padding: 0.6em 0.7em 0.7em;
     margin: 0 1px 1px 0;
+    padding: 0.6em 0.7em 0.7em;
     text-decoration: none;
     transition: background-color $transition-duration;
 
@@ -296,15 +292,15 @@ a.logo {
     fill: $color-gray !important;
 
     &.twitter {
-        fill: #1DA1F2 !important;
+        fill: #1da1f2 !important;
     }
 
     &.instagram {
-        fill: #E4405F !important;
+        fill: #e4405f !important;
     }
 
     &.facebook {
-        fill: #1877F2 !important;
+        fill: #1877f2 !important;
     }
 }
 
@@ -344,9 +340,9 @@ a.story {
 }
 
 .story-image {
-    display: block;
     background-position: center;
     background-size: cover;
+    display: block;
     height: 100%;
     position: relative;
     transition: filter $transition-duration;
@@ -488,9 +484,9 @@ a.story {
     }
 
     #footer-bridge {
+        max-width: none;
         position: absolute;
         right: -16rem;
-        max-width: none;
     }
 
     .layout {
