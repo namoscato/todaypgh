@@ -44,7 +44,7 @@ p {
 
 #header {
     overflow: hidden;
-    padding: 1rem 1rem 6rem;
+    padding: 1rem 0 6rem;
     position: relative;
 
     &::after {
@@ -79,6 +79,10 @@ p {
     .layout-secondary {
         text-align: left;
     }
+
+    .story-title {
+        margin-top: 3em;
+    }
 }
 
 #homepage-header {
@@ -88,8 +92,8 @@ p {
     .logo {
         background: url('img/logo.png') right top / 16.375rem 4.404rem no-repeat;
         font-size: 1.3em;
-        margin: 2rem -0.3125rem 2rem 0;
-        padding: 4.8rem 0.3125rem 0 0;
+        margin: 2rem 0;
+        padding-top: 4.9rem;
         text-align: right;
         width: 16.375rem;
     }
@@ -163,6 +167,9 @@ p {
     display: flex;
     flex-direction: column-reverse;
     height: 100%;
+    margin: 0 auto;
+    max-height: 60rem;
+    min-height: 40rem;
 }
 
 .layout-cover-primary,
@@ -170,9 +177,14 @@ p {
     height: 100%;
 }
 
+.layout-cover-secondary .content {
+    text-align: center;
+}
+
 .logo {
     color: $color-navy;
     display: inline-block;
+    margin-left: 1rem;
     text-decoration: none;
 
     &.is-grayscale {
@@ -193,9 +205,9 @@ p {
 
     > h2 {
         font-style: italic;
-        font-size: .88em;
+        font-size: 0.915em;
         font-weight: normal;
-        margin: .5em 0 0;
+        margin: .6em 0 0;
     }
 
     .is-color-gold {
@@ -367,7 +379,7 @@ a.story {
         &::before {
             background: url('img/quote.png') 0 0 / 2.375rem 1.625rem no-repeat;
             content: '';
-            display: block;
+            display: none;
             height: 1.625rem;
             left: -0.9375rem;
             position: absolute;
@@ -407,7 +419,7 @@ a.story {
         text-align: left;
 
         .logo {
-            margin-right: 2rem - 0.3125rem;
+            margin-right: 2rem;
         }
     }
 
@@ -437,6 +449,12 @@ a.story {
     }
 }
 
+@media (min-width: 48.75rem) {
+    .story-title > h2::before {
+        display: block;
+    }
+}
+
 @media (min-width: 55rem) {
     #stories {
         margin-left: 1em;
@@ -449,16 +467,22 @@ a.story {
 }
 
 @media (min-width: 67.625rem) {
-    #header::after {
-        left: 85%;
+    #header {
+        &::after {
+            left: 85%;
+        }
+
+        .story-title {
+            margin-top: 2em;
+        }
     }
 
     #homepage-header {
         display: block;
-        text-align: inherit;
+        text-align: right;
 
         .logo {
-            margin-right: -0.3125rem;
+            margin-right: 0;
             margin-top: 4rem;
         }
     }
