@@ -71,7 +71,7 @@
         </ul>
         <p>
             <a href="https://github.com/namoscato/one-day-today" target="_blank">Made with &hearts;</a> in Pittsburgh.<br>
-            &copy; {{ now.Format "2006" }} <a href="https://www.onedaypgh.org/" target="_blank">One Day Pittsburgh</a>.
+            &copy; {{ now.Format "2006" }} <a href="{{ printf "https://www.onedaypgh.org?%s" (querify "utm_source" "todaypgh") }}" target="_blank">One Day Pittsburgh</a>.
         </p>
     </div>
 </footer>

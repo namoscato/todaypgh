@@ -9,21 +9,38 @@
 <div class="layout-cover">
     <aside class="layout-cover-secondary">
         <div class="content">
-            <h3>{{ .Params.educator.name }}</h3>
+            {{ with $educator := .Params.educator }}
+            <h3>{{ .name }}</h3>
             <div class="story-meta">
                 <ul class="story-meta-list">
+                    {{ with .role }}
                     <li>
-                        {{ .Params.educator.role }}
+                        {{ . }}
                     </li>
+                    {{ end }}
+                    {{ with .school }}
                     <li>
-                        {{ .Params.educator.school }}
+                        {{ . }}
                     </li>
+                    {{ end }}
                 </ul>
+                {{ with .contact }}
+                <ul class="story-meta-social">
+                    {{ with .website }}
+                    <li>
+                        <a class="social-icon" href="{{ printf "%s?%s" . (querify "utm_source" "todaypgh") }}" rel="noopener" target="_blank" title="{{ printf "%s's website" $educator.name }}">
+                            {{ partial "social/globe.html" . }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
                 <p class="story-meta-posted">
                     posted on
-                    <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                    <time datetime="{{ $.PublishDate.Format "2006-01-02T15:04:05Z0700" }}">{{ $.PublishDate.Format "January 2, 2006" }}</time>
                 </p>
             </div>
+            {{ end }}
         </div>
     </aside>
     <section class="layout-cover-primary">

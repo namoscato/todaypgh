@@ -286,6 +286,11 @@ a.logo {
     pointer-events: none;
     transition: fill $transition-duration;
     width: 1.4em;
+
+    &.is-scaled {
+        font-size: 1.2em;
+        margin: -0.07em 0;
+    }
 }
 
 .social-icon:hover > svg {
@@ -390,16 +395,30 @@ a.story {
     line-height: 1.8;
 }
 
-.story-meta-list {
+.story-meta-list,
+.story-meta-social {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+.story-meta-social {
+    margin-top: 1.5rem;
+
+    > li {
+        display: inline-block;
+        margin-left: 0.5em;
+    }
+
+    .social-icon {
+        font-size: 1.1em;
+    }
+}
+
 .story-meta-posted {
     font-size: 0.9em;
     font-style: italic;
-    margin: 2em 0 0;
+    margin: 1.5em 0 0;
 }
 
 .story-social {
