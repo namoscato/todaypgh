@@ -18,10 +18,12 @@
     <meta name="msapplication-TileColor" content="#d64e2a">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="//fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     {{ $style := resources.Get "style.scss" | resources.ToCSS (dict "targetPath" "style.css" "outputStyle" "compressed") }}
     <link href="{{ $style.Permalink }}" rel="stylesheet">
+
+    {{ template "_internal/google_analytics_async.html" . }}
 </head>
 <body>
 {{ block "body" . }}
