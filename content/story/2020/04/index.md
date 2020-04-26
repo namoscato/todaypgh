@@ -1,6 +1,6 @@
 ---
 title: "One day, I hope creativity would be integrated into all areas of our curriculum"
-date: 2020-04-12T14:14:58-04:00
+date: 2020-04-26T12:00:00-04:00
 slug: "creativity-integrated-curriculum"
 educator:
     name: Mrs. Karen Amoscato
