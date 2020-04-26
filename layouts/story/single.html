@@ -6,6 +6,7 @@
 {{ end }}
 
 {{ define "content" }}
+<div class="story-image is-cover" style="background-image: url('{{ .RelPermalink }}cover.jpg')"></div>
 <div class="layout-cover">
     <aside class="layout-cover-secondary">
         <div class="content">
@@ -13,16 +14,8 @@
             <h3>{{ .name }}</h3>
             <div class="story-meta">
                 <ul class="story-meta-list">
-                    {{ with .role }}
-                    <li>
-                        {{ . }}
-                    </li>
-                    {{ end }}
-                    {{ with .school }}
-                    <li>
-                        {{ . }}
-                    </li>
-                    {{ end }}
+                    {{ with .role }}<li>{{ . }}</li>{{ end }}
+                    {{ with .school }}<li>{{ . }}</li>{{ end }}
                 </ul>
                 {{ with .contact }}
                 <ul class="story-meta-social">
