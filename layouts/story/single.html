@@ -1,14 +1,26 @@
 {{ define "meta" }}
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
 {{- $image := partial "story/cover-image.html" . -}}
+{{- $title := partial "story/title.html" . -}}
+{{- $description := partial "story/description.html" . -}}
 
-<meta property="og:title" content="{{ partial "story/title.html" . }}" />
-<meta property="og:description" content="{{ .Summary }}" />
+{{/* https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/schema.html */ -}}
+<meta itemprop="name" content="{{ $title }}">
+<meta itemprop="description" content="{{ $description }}">
+{{- if .IsPage }}{{ if not .PublishDate.IsZero }}
+<meta itemprop="datePublished" content="{{ .PublishDate.Format $iso8601 | safeHTML }}" />{{ end }}
+{{ if not .Lastmod.IsZero }}<meta itemprop="dateModified" content="{{ .Lastmod.Format $iso8601 | safeHTML }}" />{{ end }}
+<meta itemprop="wordCount" content="{{ .WordCount }}">
+<meta itemprop="image" content="{{ $image }}">
+{{- end }}
+
+{{/* https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/opengraph.html */ -}}
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:image" content="{{ $image }}" />
-
-{{ $iso8601 := "2006-01-02T15:04:05-07:00" -}}
-{{- if .IsPage }}
+{{ if .IsPage }}
 {{- if not .PublishDate.IsZero }}<meta property="article:published_time" {{ .PublishDate.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
 {{ else if not .Date.IsZero }}<meta property="article:published_time" {{ .Date.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
 {{ end }}
@@ -17,15 +29,16 @@
 {{- if not .Date.IsZero }}<meta property="og:updated_time" {{ .Date.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
 {{- end }}
 {{- end }}{{/* .IsPage */}}
-
 <meta property="og:site_name" content="{{ .Site.Params.title }}" />
 {{ with .Site.Social.facebook }}<meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />{{ end }}
 
+{{/* https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/twitter_cards.html */ -}}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="{{ $image }}" />
-<meta name="twitter:title" {{ (printf "%s's Education Story - %s" .Params.educator.name .Site.Params.title) | printf "content=%q" | safeHTMLAttr }} />
-<meta name="twitter:description" content="{{ .Title }}" />
-{{ with .Site.Social.twitter }}<meta name="twitter:site" content="@{{ . }}"/>{{ end -}}
+<meta name="twitter:title" {{ $title | printf "content=%q" | safeHTMLAttr }} />
+<meta name="twitter:description" content="{{ $description }}" />
+{{ with .Site.Social.twitter }}<meta name="twitter:site" content="@{{ . }}"/>{{ end }}
+{{ with .Params.educator.contact.twitter }}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
 {{ end }}
 
 {{ define "title" }}
