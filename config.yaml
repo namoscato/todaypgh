@@ -3,7 +3,7 @@ languageCode: en-us
 title: "TodayPGH - Inspirational Stories of Pittsburgh Educators"
 params:
     title: TodayPGH
-    description: "TodayPGH tells the stories of educators around Pittsburgh. To inspire. To lift up the profession. To provide support and inspire the next generation of educators."
+    description: "TodayPGH shares stories of Pittsburgh educators to inspire future generations, lift up the profession, and build bridges of empathy. The project transcends across school districts and grade levels, opening new windows into the field."
     images:
         - img/social-feature.jpg
 disableKinds:
