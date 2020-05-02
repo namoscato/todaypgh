@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}</title>
+    <title>{{ cond .IsHome .Site.Title (partial "story/title.html" .) }}</title>
     <link rel="canonical" href="{{ .Permalink }}">
 
+    {{ block "meta" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+    {{ end }}
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon-32x32.png">
@@ -60,17 +62,25 @@
         </section>
     </div>
     <div id="footer-copyright">
+        {{ with .Site.Social -}}
         <ul class="social">
+            {{ with .twitter -}}
             <li>
-                <a class="social-icon" href="https://twitter.com/TodayPGH" rel="noopener" target="_blank" title="Follow on Twitter">{{ partial "social/twitter.html" . }}</a>
+                <a class="social-icon" href="https://twitter.com/{{ . }}" rel="noopener" target="_blank" title="Follow on Twitter">{{ partial "social/twitter.html" . }}</a>
             </li>
+            {{- end }}
+            {{ with .facebook -}}
             <li>
-                <a class="social-icon" href="https://www.facebook.com/TodayPGH" rel="noopener" target="_blank" title="Like Facebook page">{{ partial "social/facebook.html" . }}</a>
+                <a class="social-icon" href="https://www.facebook.com/{{ . }}" rel="noopener" target="_blank" title="Like Facebook page">{{ partial "social/facebook.html" . }}</a>
             </li>
+            {{ end }}
+            {{ with .instagram -}}
             <li>
-                <a class="social-icon" href="https://www.instagram.com/todaypgh" rel="noopener" target="_blank" title="Follow on Instagram">{{ partial "social/instagram.html" . }}</a>
+                <a class="social-icon" href="https://www.instagram.com/{{ . }}" rel="noopener" target="_blank" title="Follow on Instagram">{{ partial "social/instagram.html" . }}</a>
             </li>
+            {{ end }}
         </ul>
+        {{ end }}
         <p>
             <a href="https://github.com/namoscato/one-day-today" target="_blank">Made with &hearts;</a> in Pittsburgh.<br>
             &copy; {{ now.Format "2006" }} <a href="{{ printf "https://www.onedaypgh.org?%s" (querify "utm_source" "todaypgh") }}" target="_blank">One Day Pittsburgh</a>.

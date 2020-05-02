@@ -3,9 +3,11 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 slug: ""
 educator:
-    name: ""
-    role: ""
-    school: ""
+    name: ~
+    role: ~
+    school: ~
+    contact:
+        website: ~
 ---
 
 #### What inspired you to become an educator?

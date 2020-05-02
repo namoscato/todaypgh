@@ -1,0 +1,3 @@
+{{- $images := $.Resources.ByType "image" -}}
+{{- $image := $images.GetMatch "*cover*" -}}
+{{- $image.Permalink -}}
