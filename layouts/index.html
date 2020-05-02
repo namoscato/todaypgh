@@ -19,7 +19,7 @@
         </section>
     </div>
     <ul id="stories">
-        {{- $paginator := .Paginate (after 1 (where .Site.RegularPages "Type" "story")) }}
+        {{- $paginator := .Paginate (where .Site.RegularPages "Type" "story") }}
         {{- range first 6 $paginator.Pages -}}
         <li>
             {{ .Render "summary" }}
