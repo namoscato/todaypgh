@@ -266,6 +266,7 @@ a.logo {
     &:hover,
     &:focus {
         background-color: $color-white;
+        opacity: 1 !important;
     }
 
     &:active {
