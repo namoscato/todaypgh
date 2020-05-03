@@ -1,7 +1,7 @@
 ---
 title: "One day, I hope students realize the importance of being part of a group"
 date: 2020-05-03T16:00:00-04:00
-slug: "students-learn-life-lessons-music"
+slug: "students-realize-group-importance"
 educator:
     name: Mr. Evan Hertrick
     role: Elementary Band Educator
