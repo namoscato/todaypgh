@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ cond .IsHome .Site.Title (partial "story/title.html" .) }}</title>
+    <title>
+        {{- block "title" . -}}
+        {{ cond .IsHome .Site.Title (printf "%s - %s" .Title .Site.Params.title) }}
+        {{- end -}}
+    </title>
     <link rel="canonical" href="{{ .Permalink }}">
 
     {{ block "meta" . }}
@@ -42,7 +46,7 @@
     </aside>
     <section class="layout-primary">
         <div class="content">
-            {{ block "title" . }}
+            {{ block "content-title" . }}
             <h1>{{ .Title }}</h1>
             {{ end }}
         </div>

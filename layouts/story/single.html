@@ -1,3 +1,7 @@
+{{ define "title" }}
+{{ partial "story/title.html" . }}
+{{ end }}
+
 {{ define "meta" }}
 {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
 {{- $image := partial "story/cover-image.html" . -}}
@@ -41,7 +45,7 @@
 {{ with .Params.educator.contact.twitter }}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
 {{ end }}
 
-{{ define "title" }}
+{{ define "content-title" }}
 <div class="story-title">
     <h2>One Day,</h2>
     <h1>{{ substr .Title (len "One day, ") }}&hellip;</h1>
