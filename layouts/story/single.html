@@ -64,8 +64,29 @@
                 <ul class="story-meta-social">
                     {{ with .website }}
                     <li>
-                        <a class="social-icon" href="{{ printf "%s?%s" . (querify "utm_source" "todaypgh") }}" rel="noopener" target="_blank" title="{{ printf "%s's website" $educator.name }}">
+                        <a class="social-icon" href="{{ printf "%s?%s" . (querify "utm_source" "todaypgh") }}" rel="noopener" target="_blank" title="{{ printf "%s’s website" $educator.name }}">
                             {{ partial "social/globe.html" . }}
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ with .twitter }}
+                    <li>
+                        <a class="social-icon" href="https://twitter.com/{{ . }}" rel="noopener" target="_blank" title="{{ printf "%s’s Twitter" $educator.name }}">
+                            {{ partial "social/twitter.html" . }}
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ with .facebook }}
+                    <li>
+                        <a class="social-icon" href="https://www.facebook.com/{{ . }}" rel="noopener" target="_blank" title="{{ printf "%s’s Facebook" $educator.name }}">
+                            {{ partial "social/facebook.html" . }}
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ with .instagram }}
+                    <li>
+                        <a class="social-icon" href="https://www.instagram.com/{{ . }}" rel="noopener" target="_blank" title="{{ printf "%s’s Instagram" $educator.name }}">
+                            {{ partial "social/instagram.html" . }}
                         </a>
                     </li>
                     {{ end }}
