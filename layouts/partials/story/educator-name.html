@@ -1,0 +1,3 @@
+{{- with .Params.educator -}}
+{{- with .name }}{{ . }}{{ else }}{{ .role }}{{ end -}}
+{{- end -}}

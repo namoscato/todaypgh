@@ -58,7 +58,7 @@
     <aside class="layout-cover-secondary">
         <div class="content">
             {{ with $educator := .Params.educator }}
-            <h3>{{ .name }}</h3>
+            <h3>{{ with .name }}{{ . }}{{ else }}Pittsburgh Educator{{ end }}</h3>
             <div class="story-meta">
                 <ul class="story-meta-list">
                     {{ with .role }}<li>{{ . }}</li>{{ end }}
