@@ -1,6 +1,6 @@
 ---
 title: "One day, I would love to see music continue in the public school setting"
-date: 2020-05-02T21:00:00-04:00
+date: 2020-05-03T17:30:00-04:00
 slug: "music-continue-public-school-setting"
 educator:
     name: Mrs. Susan Dinger

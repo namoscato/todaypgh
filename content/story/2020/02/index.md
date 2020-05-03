@@ -1,6 +1,6 @@
 ---
 title: "One day, I hope my elementary school makes it a priority to address the emotional well-being of children"
-date: 2020-05-02T19:00:00-04:00
+date: 2020-05-03T16:30:00-04:00
 slug: "school-prioritizes-emotional-well-being"
 educator:
     role: Reading Specialist

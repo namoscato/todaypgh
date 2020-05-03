@@ -1,6 +1,6 @@
 ---
-title: "One day, I hope students realize they can learn so many life lessons from music"
-date: 2020-05-02T18:00:00-04:00
+title: "One day, I hope students realize the importance of being part of a group"
+date: 2020-05-03T16:00:00-04:00
 slug: "students-learn-life-lessons-music"
 educator:
     name: Mr. Evan Hertrick
