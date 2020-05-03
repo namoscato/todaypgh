@@ -113,23 +113,25 @@
             {{ .Content }}
             <ul class="social story-social">
                 <li>
-                    {{ $queryString := (querify "text" (printf `"%s"` .Title) "url" .Permalink "via" "TodayPGH" "related" "TodayPGH") | safeURL -}}
+                    {{ $queryString := (querify "text" (printf `“%s”` .Title) "url" .Permalink "via" "TodayPGH" "related" "TodayPGH") | safeURL -}}
                     {{ $href := printf "https://twitter.com/intent/tweet?%s" $queryString -}}
-                    <a class="social-icon" href="{{ $href }}" rel="noopener" target="_blank"  title="Share on Twitter">
+                    <a class="social-icon" data-track-event="Share on Twitter" href="{{ $href }}" rel="noopener" target="_blank"  title="Share on Twitter">
                         {{ partial "social/twitter.html" . }}
                     </a>
                 </li>
                 <li>
                     {{ $queryString := (querify "u" .Permalink) | safeURL -}}
                     {{ $href := printf "https://facebook.com/sharer/sharer.php?%s" $queryString -}}
-                    <a class="social-icon" href="{{ $href }}" rel="noopener" target="_blank" title="Share on Facebook">
+                    <a class="social-icon" data-track-event="Share on Facebook" href="{{ $href }}" rel="noopener" target="_blank" title="Share on Facebook">
                         {{ partial "social/facebook.html" . }}
                     </a>
                 </li>
                 <li>
-                    {{ $queryString := (querify "subject" .Title "body" .Permalink) | safeURL -}}
+                    {{- $title := partial "story/title.html" . -}}
+                    {{- $body := printf "“%s”\n\n%s" .Title .Permalink -}}
+                    {{- $queryString := (querify "subject" $title "body" $body) | safeURL -}}
                     {{ $href := printf "mailto:?%s" $queryString -}}
-                    <a class="social-icon" href="{{ $href }}" rel="noopener" target="_blank" title="Share via email">
+                    <a class="social-icon" data-track-event="Share via email" href="{{ $href }}" rel="noopener" target="_blank" title="Share via email">
                         {{ partial "social/email.html" . }}
                     </a>
                 </li>

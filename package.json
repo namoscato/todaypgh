@@ -1,20 +1,22 @@
 {
-  "name": "one-day-today",
-  "version": "0.1.0",
-  "description": "Inspirational Stories of Pittsburgh Educators",
-  "scripts": {
-    "lint-sass": "npx stylelint assets/*.scss"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/namoscato/one-day-today.git"
-  },
-  "author": "Nick Amoscato",
-  "license": "ISC",
-  "homepage": "https://www.todaypgh.com",
-  "devDependencies": {
-    "stylelint": "^13.3.3",
-    "stylelint-config-sass-guidelines": "^7.0.0"
-  },
-  "dependencies": {}
+    "name": "one-day-today",
+    "version": "0.1.0",
+    "description": "Inspirational Stories of Pittsburgh Educators",
+    "scripts": {
+        "lint-sass": "stylelint assets/*.scss",
+        "test": "standard assets/**/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/namoscato/one-day-today.git"
+    },
+    "author": "Nick Amoscato",
+    "license": "ISC",
+    "homepage": "https://www.todaypgh.com",
+    "devDependencies": {
+        "standard": "^14.3.3",
+        "stylelint": "^13.3.3",
+        "stylelint-config-sass-guidelines": "^7.0.0"
+    },
+    "dependencies": {}
 }
