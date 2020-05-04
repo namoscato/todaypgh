@@ -3,7 +3,7 @@ title: "One day, I look forward to the future when my students go beyond school"
 date: 2020-05-03T17:00:00-04:00
 slug: "future-students-beyond-school"
 educator:
-    name: Mrs. Stephanie Schultz
+    name: Miss Stephanie Schultz
     role: Kindergarten Educator
     school: Seneca Valley School District
     contact:
