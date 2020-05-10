@@ -1,10 +1,18 @@
 {{ define "content" }}
+{{- $paginator := .Paginate (where .Site.RegularPages "Type" "story") 12 }}
 <ul id="stories">
-    {{- $paginator := .Paginate (where .Site.RegularPages "Type" "story") }}
-    {{- range first 6 $paginator.Pages -}}
+    {{- range $paginator.Pages -}}
     <li>
         {{ .Render "summary" }}
     </li>
     {{ end -}}
 </ul>
+{{ if $paginator.HasNext }}
+<div class="utl-text-center">
+    <a class="button" href="{{ $paginator.Next.URL }}">
+        Read more stories
+        <span class="icon">↓</span>
+    </a>
+</div>
+{{ end }}
 {{ end }}
