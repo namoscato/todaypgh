@@ -1,6 +1,6 @@
 ---
 title: "One Day, I hope that the trust of each educator can be reestablished so that they can do what is best for children"
-date: 2020-05-09T17:59:14-04:00
+date: 2020-05-12T11:00:00-04:00
 slug: "educator-trust-reestablished-best-children"
 educator:
     name: Mrs. Jodi Albert
