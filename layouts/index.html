@@ -4,10 +4,7 @@
         <aside class="layout-secondary is-align-right">
             <div class="layout-secondary-content">
                 <div id="homepage-header">
-                    <div class="logo">
-                        <h1>Today<span class="is-color-gold">PGH</span></h1>
-                        <h2>a project by One Day Pittsburgh</h2>
-                    </div>
+                    <img alt="TodayPGH Logo" class="logo" src="{{ .Site.BaseURL }}img/homepage-logo.png" width="262">
                     <p>{{ $.Site.Params.description }}</p>
                 </div>
             </div>
@@ -20,7 +17,7 @@
     </div>
     <ul id="stories">
         {{- $paginator := .Paginate (where .Site.RegularPages "Type" "story") }}
-        {{- range first 6 $paginator.Pages -}}
+        {{- range first 7 $paginator.Pages -}}
         <li>
             {{ .Render "summary" }}
         </li>

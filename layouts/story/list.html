@@ -1,0 +1,10 @@
+{{ define "content" }}
+<ul id="stories">
+    {{- $paginator := .Paginate (where .Site.RegularPages "Type" "story") }}
+    {{- range first 6 $paginator.Pages -}}
+    <li>
+        {{ .Render "summary" }}
+    </li>
+    {{ end -}}
+</ul>
+{{ end }}

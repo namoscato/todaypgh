@@ -8,14 +8,15 @@ educator:
     school: ~
     contact:
         website: ~
+        instagram: ~
+        facebook: ~
+        twitter: ~
 ---
 
-#### What inspired you to become an educator?
+#### What or who inspired you to become an educator?
 
 #### What roles have you had in the sphere of education?
 
-#### What grades have you taught or currently teach?
-
-#### Why are you still in education?
+#### Why are you still in the field of education?
 
 #### One day what do you hope for?
