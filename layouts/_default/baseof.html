@@ -36,21 +36,17 @@
     {{ $js := resources.Get "script.js" | resources.Minify }}
     <script src="{{ $js.Permalink }}" defer></script>
 </head>
-<body>
+<body class="is-{{ .Kind }}-{{ .Type }}">
 {{ block "body" . }}
-<header id="header" class="layout">
-    <aside class="layout-secondary">
-        <a href="{{ .Site.BaseURL }}" class="logo is-grayscale">
-            <h1>Today<span class="is-color-gold">PGH</span></h1>
+<header id="header">
+    <h1 class="title">
+        <a href="{{ .Site.BaseURL }}" class="title-site is-grayscale">
+            Today<span class="is-color-gold">PGH</span>
         </a>
-    </aside>
-    <section class="layout-primary">
-        <div class="content">
-            {{ block "content-title" . }}
-            <h1>{{ .Title }}</h1>
-            {{ end }}
-        </div>
-    </section>
+        <span class="title-page">
+            {{ .Title }}
+        </span>
+    </h1>
 </header>
 {{ block "content" . }}
 {{ .Content }}
@@ -66,7 +62,12 @@
                 <p><em>To all educators, change makers, and dreamers...</em></p>
                 <p>Thank you for being the thinkers of <a href="{{ .Site.BaseURL }}">TodayPGH</a>. Our hope is to share a collection of stories from educators around Pittsburgh to inspire future generations, lift up the profession, and build bridges of empathy. The project transcends school districts and grade levels, opening new windows into the field.</p>
                 <p>Through storytelling, we hope to create mirrors to inspire reflection – connecting one another in support and love.</p>
-                <p class="utl-mt1-5"><a class="button" data-track-event="Share your story" href="https://forms.gle/fLeMEXBEGZ5phHgXA" target="_blank">Share your story &rarr;</a></p>
+                <p class="utl-mt1-5">
+                    <a class="button" data-track-event="Share your story" href="https://forms.gle/fLeMEXBEGZ5phHgXA" target="_blank">
+                        Share your story
+                        <span class="icon">→</span>
+                    </a>
+                </p>
             </div>
         </section>
     </div>

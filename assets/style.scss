@@ -33,6 +33,10 @@ p {
     margin-top: 3em !important;
 }
 
+.utl-text-center {
+    text-align: center;
+}
+
 #body {
     margin: 0 auto;
     max-width: 130rem;
@@ -40,7 +44,7 @@ p {
 
 #header {
     overflow: hidden;
-    padding: 1rem 0 6rem;
+    padding: 2rem;
     position: relative;
 
     &::after {
@@ -51,19 +55,6 @@ p {
         position: absolute;
         top: 0;
         width: 12.139rem;
-        z-index: 0;
-    }
-
-    &::before {
-        background: url('img/bridge.png') right top / 50rem 16.9375rem no-repeat;
-        bottom: -6.375rem;
-        content: '';
-        filter: grayscale(1);
-        height: 16.9375rem;
-        opacity: 0.6;
-        position: absolute;
-        right: 62%;
-        width: 50rem;
         z-index: 0;
     }
 
@@ -81,17 +72,29 @@ p {
     }
 }
 
+#header.is-story {
+    padding: 1rem 1rem 6rem;
+
+    &::before {
+        background: url('img/bridge.png') right top / 50rem 16.9375rem no-repeat;
+        bottom: -6.375rem;
+        content: '';
+        filter: grayscale(1);
+        height: 16.9375rem;
+        opacity: 0.6;
+        position: absolute;
+        right: 62%;
+        width: 50rem;
+        z-index: 0;
+    }
+}
+
 #homepage-header {
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
     max-width: $content-width;
 
     .logo {
-        background: url('img/logo.png') right top / 16.375rem 4.404rem no-repeat;
-        font-size: 1.3em;
-        margin: 2rem 0;
-        padding-top: 4.9rem;
-        text-align: right;
-        width: 16.375rem;
+        margin: 2rem 0 1.5rem;
     }
 }
 
@@ -104,7 +107,7 @@ p {
 
     > li {
         box-sizing: border-box;
-        padding: 0 1rem 2rem;
+        padding: 1rem;
         width: 100%;
     }
 }
@@ -172,11 +175,17 @@ p {
     text-align: center;
 }
 
-.logo {
+.title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.title-site {
     color: $color-navy;
-    display: inline-block;
-    margin-left: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
     text-decoration: none;
+    text-transform: uppercase;
 
     &.is-grayscale {
         color: #848484;
@@ -186,27 +195,12 @@ p {
         }
     }
 
-    > h1 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 3em;
-        font-weight: 500;
-        margin: 0;
-        text-transform: uppercase;
-    }
-
-    > h2 {
-        font-size: 0.915em;
-        font-style: italic;
-        font-weight: normal;
-        margin: 0.6em 0 0;
-    }
-
     .is-color-gold {
         color: $color-gold;
     }
 }
 
-a.logo {
+a.title-site {
     &:hover,
     &:focus {
         color: $color-navy;
@@ -215,6 +209,11 @@ a.logo {
             color: $color-gold;
         }
     }
+}
+
+.title-page {
+    font-size: 1.05em;
+    font-weight: 600;
 }
 
 .content {
@@ -237,7 +236,7 @@ a.logo {
         font-size: 1.1em;
     }
 
-    > p > a {
+    > p > a:not(.button) {
         border-bottom: 1px solid rgba($color-black, 0.7);
         color: inherit;
         text-decoration: none;
@@ -266,13 +265,16 @@ a.logo {
     &:hover,
     &:focus {
         background-color: $color-white;
-        opacity: 1 !important;
     }
 
     &:active {
         box-shadow: none;
         margin: 1px 0 0 1px;
     }
+}
+
+.icon {
+    font-family: sans-serif;
 }
 
 .social {
@@ -323,7 +325,7 @@ a.logo {
 
 .story.is-featured {
     display: none;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     .story-image {
         height: 29em;
@@ -452,7 +454,7 @@ a.story {
     #homepage-header {
         align-items: center;
         display: flex;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         text-align: left;
 
         .logo {
@@ -501,11 +503,11 @@ a.story {
 
         > li {
             width: 50%;
-
-            &:first-child {
-                display: none;
-            }
         }
+    }
+
+    #stories.is-homepage > li:first-child {
+        display: none;
     }
 }
 

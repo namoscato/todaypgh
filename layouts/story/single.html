@@ -45,14 +45,24 @@
 {{ with .Params.educator.contact.twitter }}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
 {{ end }}
 
-{{ define "content-title" }}
-<div class="story-title">
-    <h2>One Day,</h2>
-    <h1>{{ substr .Title (len "One day, ") }}&hellip;</h1>
-</div>
-{{ end }}
-
-{{ define "content" }}
+{{ define "body" }}
+<header id="header" class="layout is-story">
+    <aside class="layout-secondary">
+        <h1 class="title">
+            <a href="{{ .Site.BaseURL }}" class="title-site is-grayscale">
+                Today<span class="is-color-gold">PGH</span>
+            </a>
+        </h1>
+    </aside>
+    <section class="layout-primary">
+        <div class="content">
+            <div class="story-title">
+                <h2>One Day,</h2>
+                <h1>{{ substr .Title (len "One day, ") }}&hellip;</h1>
+            </div>
+        </div>
+    </section>
+</header>
 <div class="story-image is-cover" style="background-image: url('{{ partial "story/cover-image.html" . }}')"></div>
 <div class="layout-cover">
     <aside class="layout-cover-secondary">
