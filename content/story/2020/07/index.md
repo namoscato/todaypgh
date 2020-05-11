@@ -1,7 +1,7 @@
 ---
 title: "One day, I hope everyone realizes mental health is a key piece in a child's success"
 date: 2020-05-11T18:22:09-04:00
-slug: ""
+slug: "mental-health-child-success"
 educator:
     name: Miss. Jacqueline Decker
     role: Elementary Counselor
