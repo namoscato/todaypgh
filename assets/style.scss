@@ -19,6 +19,21 @@ body {
     background-color: $color-white;
     color: $color-black;
     font-family: 'Playfair Display', serif;
+
+    &::before {
+        background: url('img/sun.png') right top / 12.139rem 15rem no-repeat;
+        content: '';
+        height: 15rem;
+        left: 68%;
+        position: absolute;
+        top: 0;
+        width: 12.139rem;
+        z-index: 0;
+    }
+
+    &.is-home-page::before {
+        content: normal;
+    }
 }
 
 p {
@@ -43,20 +58,8 @@ p {
 }
 
 #header {
-    overflow: hidden;
-    padding: 2rem;
+    padding: 2rem 4rem 2rem 2rem;
     position: relative;
-
-    &::after {
-        background: url('img/sun.png') right top / 12.139rem 15rem no-repeat;
-        content: '';
-        height: 15rem;
-        left: 68%;
-        position: absolute;
-        top: 0;
-        width: 12.139rem;
-        z-index: 0;
-    }
 
     .layout-primary {
         position: relative;
@@ -94,7 +97,7 @@ p {
     max-width: $content-width;
 
     .logo {
-        margin: 2rem 0 1.5rem;
+        margin: 2rem 0 1rem;
     }
 }
 
@@ -178,6 +181,8 @@ p {
 .title {
     font-size: 3em;
     margin: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .title-site {
@@ -462,7 +467,7 @@ a.story {
         }
     }
 
-    #header::after {
+    body::before {
         background: url('img/sun.png') right top / 15.625em 19.308em no-repeat;
         height: 19.308em;
         left: 77%;
@@ -489,6 +494,10 @@ a.story {
 }
 
 @media (min-width: 48rem) {
+    #homepage-header .logo {
+        margin-bottom: 2.5rem;
+    }
+
     .story.is-featured {
         display: block;
     }
@@ -512,11 +521,11 @@ a.story {
 }
 
 @media (min-width: 67.625rem) {
-    #header {
-        &::after {
-            left: 85%;
-        }
+    body::before {
+        left: 85%;
+    }
 
+    #header {
         .story-title {
             margin-top: 2em;
         }
@@ -527,8 +536,7 @@ a.story {
         text-align: right;
 
         .logo {
-            margin-right: 0;
-            margin-top: 3rem;
+            margin: 3rem 0 1rem;
         }
     }
 
@@ -627,7 +635,7 @@ a.story {
 }
 
 @media (min-width: 85rem) {
-    #header::after {
+    body::before {
         left: auto;
         right: 0;
     }
