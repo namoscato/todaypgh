@@ -14,7 +14,7 @@
     "license": "ISC",
     "homepage": "https://www.todaypgh.com",
     "devDependencies": {
-        "standard": "^14.3.3",
+        "standard": "^14.3.4",
         "stylelint": "^13.3.3",
         "stylelint-config-sass-guidelines": "^7.0.0"
     },
