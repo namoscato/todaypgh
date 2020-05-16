@@ -49,7 +49,7 @@
 <header id="header" class="layout is-story">
     <aside class="layout-secondary">
         <h1 class="title">
-            <a href="{{ .Site.BaseURL }}" class="title-site is-grayscale">
+            <a href="{{ "/" | relURL }}" class="title-site is-grayscale">
                 Today<span class="is-color-gold">PGH</span>
             </a>
         </h1>
@@ -58,7 +58,7 @@
         <div class="content">
             <div class="story-title">
                 <h2>One Day,</h2>
-                <h1>{{ substr .Title (len "One day, ") }}&hellip;</h1>
+                <h1>{{ substr .Title (len "One day, ") }}…</h1>
             </div>
         </div>
     </section>

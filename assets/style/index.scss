@@ -1,14 +1,5 @@
-$color-white: #fffbf2;
-$color-black: #23252e;
-$color-navy: #1f2d6b;
-$color-gold: #ffc862;
-$color-lightblue: #c3ebf7;
-$color-gray: #484a4f;
-$color-lightgray: #62747f;
-
-$transition-duration: 0.3s;
-
-$content-width: 43.75rem;
+@import 'button';
+@import 'variable';
 
 html,
 body {
@@ -19,17 +10,6 @@ body {
     background-color: $color-white;
     color: $color-black;
     font-family: 'Playfair Display', serif;
-
-    &::before {
-        background: url('img/sun.png') right top / 12.139rem 15rem no-repeat;
-        content: '';
-        height: 15rem;
-        left: 68%;
-        position: absolute;
-        top: 0;
-        width: 12.139rem;
-        z-index: 0;
-    }
 
     &.is-home-page::before {
         content: normal;
@@ -58,8 +38,20 @@ p {
 }
 
 #header {
+    overflow: hidden;
     padding: 2rem 4rem 2rem 2rem;
     position: relative;
+
+    &::after {
+        background: url('img/sun.png') right top / 12.139rem 15rem no-repeat;
+        content: '';
+        height: 15rem;
+        left: 68%;
+        position: absolute;
+        top: 0;
+        width: 12.139rem;
+        z-index: 0;
+    }
 
     .layout-primary {
         position: relative;
@@ -253,31 +245,6 @@ a.title-site {
     }
 }
 
-.button {
-    background-color: rgba($color-white, 0.7);
-    border: 1px solid $color-navy;
-    border-radius: 0.3125rem;
-    box-shadow: 1px 1px 0 1px $color-navy;
-    color: $color-navy;
-    display: inline-block;
-    font-weight: 600;
-    line-height: 1;
-    margin: 0 1px 1px 0;
-    padding: 0.6em 0.7em 0.7em;
-    text-decoration: none;
-    transition: background-color $transition-duration;
-
-    &:hover,
-    &:focus {
-        background-color: $color-white;
-    }
-
-    &:active {
-        box-shadow: none;
-        margin: 1px 0 0 1px;
-    }
-}
-
 .icon {
     font-family: sans-serif;
 }
@@ -467,7 +434,7 @@ a.story {
         }
     }
 
-    body::before {
+    #header::after {
         background: url('img/sun.png') right top / 15.625em 19.308em no-repeat;
         height: 19.308em;
         left: 77%;
@@ -521,11 +488,11 @@ a.story {
 }
 
 @media (min-width: 67.625rem) {
-    body::before {
-        left: 85%;
-    }
-
     #header {
+        &::after {
+            left: 85%;
+        }
+
         .story-title {
             margin-top: 2em;
         }
@@ -635,7 +602,7 @@ a.story {
 }
 
 @media (min-width: 85rem) {
-    body::before {
+    #header::after {
         left: auto;
         right: 0;
     }
