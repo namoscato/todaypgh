@@ -1,5 +1,5 @@
 ---
-title: Share your story
+title: Share Your Story
 ---
 
 _Dear educator…_

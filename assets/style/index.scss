@@ -47,9 +47,42 @@ p {
 }
 
 #header {
+    border-bottom: 1px solid $color-gray-light;
+    margin-bottom: 2rem;
     overflow: hidden;
-    padding: 2rem 4rem 2rem 2rem;
+    padding: 1rem 1rem 10rem;
     position: relative;
+
+    &::before {
+        background: url('img/bridge.png') right top / 37.5rem 12.84375rem no-repeat;
+        bottom: -8.9375rem;
+        content: '';
+        height: 16.9375rem;
+        margin-right: -18.75rem;
+        position: absolute;
+        right: 50%;
+        width: 50rem;
+        z-index: 0;
+    }
+}
+
+#header-story {
+    overflow: hidden;
+    padding: 1rem 1rem 6rem;
+    position: relative;
+
+    &::before {
+        background: url('img/bridge.png') right top / 50rem 16.9375rem no-repeat;
+        bottom: -6.375rem;
+        content: '';
+        filter: grayscale(1);
+        height: 16.9375rem;
+        opacity: 0.6;
+        position: absolute;
+        right: 62%;
+        width: 50rem;
+        z-index: 0;
+    }
 
     &::after {
         background: url('img/sun.png') right top / 12.139rem 15rem no-repeat;
@@ -73,23 +106,6 @@ p {
 
     .story-title {
         margin-top: 3em;
-    }
-}
-
-#header.is-story {
-    padding: 1rem 1rem 6rem;
-
-    &::before {
-        background: url('img/bridge.png') right top / 50rem 16.9375rem no-repeat;
-        bottom: -6.375rem;
-        content: '';
-        filter: grayscale(1);
-        height: 16.9375rem;
-        opacity: 0.6;
-        position: absolute;
-        right: 62%;
-        width: 50rem;
-        z-index: 0;
     }
 }
 
@@ -131,7 +147,7 @@ p {
 }
 
 #footer-copyright {
-    color: $color-lightgray;
+    color: $color-gray;
     padding: 2rem;
     text-align: center;
 
@@ -146,12 +162,12 @@ p {
         transition: color $transition-duration;
 
         &:hover {
-            color: darken($color-lightgray, 15);
+            color: darken($color-gray, 15);
         }
     }
 
     .social-icon > svg {
-        fill: $color-lightgray;
+        fill: $color-gray;
     }
 }
 
@@ -164,7 +180,7 @@ p {
 }
 
 .layout-secondary-content > p {
-    color: $color-gray;
+    color: $color-gray-dark;
 }
 
 .layout-cover {
@@ -218,8 +234,14 @@ a.title-site {
 }
 
 .title-page {
+    display: inline-block;
     font-size: 0.9em;
     font-weight: 600;
+    text-transform: lowercase;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
 }
 
 .content {
@@ -233,7 +255,7 @@ a.title-site {
     }
 
     > h4 {
-        color: $color-gray;
+        color: $color-gray-dark;
         font-size: 1.2em;
         margin-top: 2em;
     }
@@ -289,7 +311,7 @@ a.title-site {
 }
 
 .social-icon:hover > svg {
-    fill: $color-gray !important;
+    fill: $color-gray-dark !important;
 
     &.twitter {
         fill: #1da1f2 !important;
@@ -396,7 +418,7 @@ a.story {
 }
 
 .story-meta {
-    color: $color-gray;
+    color: $color-gray-dark;
     line-height: 1.8;
 }
 
@@ -443,8 +465,8 @@ a.story {
         }
     }
 
-    #header::after {
-        background: url('img/sun.png') right top / 15.625em 19.308em no-repeat;
+    #header-story::after {
+        background-size: 15.625em 19.308em;
         height: 19.308em;
         left: 77%;
         width: 15.625em;
@@ -498,6 +520,23 @@ a.story {
 
 @media (min-width: 67.625rem) {
     #header {
+        margin-bottom: 1rem;
+        padding: 3rem 2rem;
+
+        &::before {
+            background-size: 50rem 16.9375rem;
+            bottom: -6.375rem;
+            margin-right: 0;
+            right: -16rem;
+            transform: scaleX(-1);
+        }
+    }
+
+    #header-story {
+        &::before {
+            transform: none;
+        }
+
         &::after {
             left: 85%;
         }
@@ -574,7 +613,7 @@ a.story {
 
     .layout-cover-secondary {
         background: linear-gradient(180deg, #faf7f0 0%, $color-white 70%);
-        border-top: 1px solid #e9e7e4;
+        border-top: 1px solid $color-gray-light;
         flex: 1;
         overflow: hidden;
         position: relative;
@@ -611,7 +650,7 @@ a.story {
 }
 
 @media (min-width: 85rem) {
-    #header::after {
+    #header-story::after {
         left: auto;
         right: 0;
     }

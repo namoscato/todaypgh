@@ -1,19 +1,5 @@
-/* global $, atob */
+/* global $, atob, ga */
 (function () {
-  function getUrlParam (name) {
-    const params = window.location.search.substring(1).split('&')
-    let paramParts
-    let i
-
-    for (i = 0; i < params.length; i++) {
-      paramParts = params[i].split('=')
-
-      if (paramParts[0] === name) {
-        return undefined === paramParts[1] ? null : decodeURIComponent(paramParts[1])
-      }
-    }
-  }
-
   let referrer = getUrlParam('r')
 
   if (!referrer) {
@@ -44,5 +30,25 @@
       shareLink.data('prefilled-url') +
       encodeURIComponent(paramParts.join(' - '))
     )
+
+    ga('set', {
+      campaignSource: referrerEmail || referrerName,
+      campaignMedium: referrer.medium,
+      campaignName: 'spread-the-love',
+    })
+  }
+
+  function getUrlParam (name) {
+    const params = window.location.search.substring(1).split('&')
+    let paramParts
+    let i
+
+    for (i = 0; i < params.length; i++) {
+      paramParts = params[i].split('=')
+
+      if (paramParts[0] === name) {
+        return undefined === paramParts[1] ? null : decodeURIComponent(paramParts[1])
+      }
+    }
   }
 })()
