@@ -65,7 +65,7 @@
 </header>
 <div class="story-image is-cover" style="background-image: url('{{ partial "story/cover-image.html" . }}')"></div>
 <div class="layout-cover">
-    <aside class="layout-cover-secondary">
+    <aside class="layout-cover-secondary is-shaded-top-left">
         <div class="content">
             {{ with $educator := .Params.educator }}
             <h3>{{ with .name }}{{ . }}{{ else }}Pittsburgh Educator{{ end }}</h3>
