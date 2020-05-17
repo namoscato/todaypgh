@@ -3,8 +3,8 @@
     "version": "0.1.0",
     "description": "Inspirational Stories of Pittsburgh Educators",
     "scripts": {
-        "lint-sass": "stylelint assets/*.scss",
-        "test": "standard assets/**/*.js"
+        "lint-sass": "stylelint \"assets/**/*.scss\"",
+        "test": "standard \"assets/**/*.js\""
     },
     "repository": {
         "type": "git",
