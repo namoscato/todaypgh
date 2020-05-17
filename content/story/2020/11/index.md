@@ -1,7 +1,7 @@
 ---
 title: "One day, I hope teachers get to be change agents, mentors, moms, dads, counselors, and everything in between"
 date: 2020-05-17T18:40:59-04:00
-slug: ""
+slug: "teachers-change-agents-mentors-moms-dads-counselors"
 educator:
     role: Kindergarten Educator
 ---
