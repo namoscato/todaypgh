@@ -1,0 +1,45 @@
+{{- $shareUrl := (.Site.GetPage "/spread-the-love/share").Permalink -}}
+<form id="spread-form" data-share-url="{{ $shareUrl }}">
+    <label for="name">Your name</label>
+    <input id="name" name="name" placeholder="John" type="text">
+
+    <label for="email">Your email</label>
+    <input id="email" name="email" placeholder="you@gmail.com" type="text" required>
+
+    <button class="button" type="submit">
+        Spread the love
+        <span class="icon">→</span>
+    </button>
+</form>
+<div id="spread-link" class="utl-display-none">
+    <p><a id="spread-link-back" href="#">← Back</a></p>
+
+    <input id="spread-link-input" type="text" readonly>
+    <button id="spread-link-button" class="button" data-clipboard-target="#spread-link-input" type="button">
+        Copy link
+    </button>
+
+    <ul class="social story-social utl-mt1">
+        <li>
+            {{ $queryString := (querify "url" $shareUrl "via" "TodayPGH" "related" "TodayPGH") | safeURL -}}
+            {{ $href := printf "https://twitter.com/intent/tweet?%s" $queryString -}}
+            <a class="social-icon" data-share-social="twitter" href="{{ $href }}" rel="noopener" target="_blank"  title="Share on Twitter">
+                {{ partial "social/twitter.html" . }}
+            </a>
+        </li>
+        <li>
+            {{ $queryString := (querify "u" $shareUrl) | safeURL -}}
+            {{ $href := printf "https://facebook.com/sharer/sharer.php?%s" $queryString -}}
+            <a class="social-icon" data-share-social="facebook" href="{{ $href }}" rel="noopener" target="_blank" title="Share on Facebook">
+                {{ partial "social/facebook.html" . }}
+            </a>
+        </li>
+        <li>
+            {{- $queryString := (querify "subject" .Site.Title "body" $shareUrl) | safeURL -}}
+            {{ $href := printf "mailto:?%s" $queryString -}}
+            <a class="social-icon" data-share-social="email" href="{{ $href }}" rel="noopener" target="_blank" title="Share via email">
+                {{ partial "social/email.html" . }}
+            </a>
+        </li>
+    </ul>
+</div>

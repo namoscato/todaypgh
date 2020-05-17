@@ -1,0 +1,4 @@
+{{ define "script" }}
+{{ $js := resources.Get "script/spread/share.js" | resources.Minify }}
+<script src="{{ $js.Permalink }}" defer></script>
+{{ end }}

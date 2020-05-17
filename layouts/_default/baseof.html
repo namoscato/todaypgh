@@ -33,23 +33,31 @@
     {{ template "_internal/google_analytics_async.html" . }}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous" defer></script>
-    {{ $js := resources.Get "script.js" | resources.Minify }}
+    {{ $js := resources.Get "script/global.js" | resources.Minify }}
     <script src="{{ $js.Permalink }}" defer></script>
+    {{ block "script" . }}{{ end }}
 </head>
 <body class="is-{{ .Kind }}-{{ .Type }}">
 {{ block "body" . }}
 <header id="header">
     <h1 class="title">
-        <a href="{{ .Site.BaseURL }}" class="title-site is-grayscale">
+        <a href="{{ "/" | relURL }}" class="title-site is-grayscale">
             Today<span class="is-color-gold">PGH</span>
         </a>
-        <span class="title-page">
-            {{ .Title }}
-        </span>
+        <span class="title-page">{{ .Title }}</span>
     </h1>
 </header>
-{{ block "content" . }}
-{{ .Content }}
+{{ block "main" . }}
+<main class="layout">
+    <aside class="layout-secondary is-shaded-top-left"></aside>
+    <section class="layout-primary utl-pt1">
+        <div class="content">
+            {{ block "content" . }}
+            {{ .Content }}
+            {{ end }}
+        </div>
+    </section>
+</main>
 {{ end }}
 {{ end }}
 <footer id="footer">
@@ -59,14 +67,14 @@
         </aside>
         <section class="layout-primary">
             <div class="content utl-mt3">
-                <p><em>To all educators, change makers, and dreamers...</em></p>
+                <p><em>To all educators, change makers, and dreamers…</em></p>
                 <p>Thank you for being the thinkers of <a href="{{ .Site.BaseURL }}">TodayPGH</a>. Our hope is to share a collection of stories from educators around Pittsburgh to inspire future generations, lift up the profession, and build bridges of empathy. The project transcends school districts and grade levels, opening new windows into the field.</p>
                 <p>Through storytelling, we hope to create mirrors to inspire reflection – connecting one another in support and love.</p>
                 <p class="utl-mt1-5">
-                    <a class="button" data-track-event="Share your story" href="https://forms.gle/fLeMEXBEGZ5phHgXA" target="_blank">
-                        Share your story
-                        <span class="icon">→</span>
-                    </a>
+                    {{ partial "story/share.html" . }}
+                </p>
+                <p>
+                    or <a href="{{ (.Site.GetPage "/spread-the-love").Permalink }}">spread the love</a> to your teachers.
                 </p>
             </div>
         </section>
@@ -92,7 +100,7 @@
         </ul>
         {{ end }}
         <p>
-            <a href="https://github.com/namoscato/one-day-today" target="_blank">Made with &hearts;</a> in Pittsburgh.<br>
+            <a href="https://github.com/namoscato/one-day-today" target="_blank">Made with ♥</a> in Pittsburgh.<br>
             &copy; {{ now.Format "2006" }} <a href="{{ printf "https://www.onedaypgh.org?%s" (querify "utm_source" "todaypgh") }}" target="_blank">One Day Pittsburgh</a>.
         </p>
     </div>

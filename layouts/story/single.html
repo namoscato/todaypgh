@@ -46,7 +46,7 @@
 {{ end }}
 
 {{ define "body" }}
-<header id="header" class="layout is-story">
+<header id="header-story" class="layout">
     <aside class="layout-secondary">
         <h1 class="title">
             <a href="{{ "/" | relURL }}" class="title-site is-grayscale">
@@ -65,7 +65,7 @@
 </header>
 <div class="story-image is-cover" style="background-image: url('{{ partial "story/cover-image.html" . }}')"></div>
 <div class="layout-cover">
-    <aside class="layout-cover-secondary">
+    <aside class="layout-cover-secondary is-shaded-top-left">
         <div class="content">
             {{ with $educator := .Params.educator }}
             <h3>{{ with .name }}{{ . }}{{ else }}Pittsburgh Educator{{ end }}</h3>

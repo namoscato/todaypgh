@@ -1,4 +1,4 @@
-{{ define "content" }}
+{{ define "main" }}
 {{- $paginator := .Paginate (where .Site.RegularPages "Type" "story") 12 }}
 <ul id="stories">
     {{- range $paginator.Pages -}}
