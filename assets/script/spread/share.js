@@ -13,7 +13,7 @@
   const referrerName = referrer.name
 
   if (referrerName) {
-    $('#text-name-life').text(referrerName + '’s life')
+    $('#text-referrer-name').text(referrerName)
 
     paramParts.push(referrerName)
   }
