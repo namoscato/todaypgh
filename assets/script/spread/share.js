@@ -34,7 +34,7 @@
     ga('set', {
       campaignSource: referrerEmail || referrerName,
       campaignMedium: referrer.medium,
-      campaignName: 'spread-the-love',
+      campaignName: 'spread-the-love'
     })
   }
 

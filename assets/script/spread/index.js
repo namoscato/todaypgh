@@ -1,4 +1,4 @@
-/* global $, btoa, ClipboardJS */
+/* global $, btoa, ClipboardJS, ga */
 (function () {
   const form = $('#spread-form')
   const link = $('#spread-link')
@@ -66,7 +66,7 @@
     trackEvent('Share', $(this).data('share-social'))
   })
 
-  function getReferrerUrl(medium) {
+  function getReferrerUrl (medium) {
     return shareUrl + '?r=' + encodeURIComponent(btoa(JSON.stringify({
       email: referrerEmail,
       name: referrerName,
@@ -74,7 +74,7 @@
     })))
   }
 
-  function trackEvent(action, label) {
+  function trackEvent (action, label) {
     ga('send', 'event', 'Spread', action, label)
   }
 })()
