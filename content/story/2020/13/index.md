@@ -3,9 +3,8 @@ title: "One day, I hope that our students will realize the impact that they have
 date: 2020-05-20T23:30:00-04:00
 slug: "students-realize-impact-our-lives"
 educator:
-    name: Ms. Brittany Bauer
+    name: Mrs. Brittany Bertonaschi
     role: Elementary Special Education Educator
-    school: ~
 ---
 
 #### What or who inspired you to become an educator?
