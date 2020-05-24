@@ -1,0 +1,2 @@
+Define slug
+slug:\s*(""|~)

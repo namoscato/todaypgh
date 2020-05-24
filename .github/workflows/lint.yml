@@ -35,3 +35,12 @@ jobs:
               run: npm ci
             - name: Lint Sass
               run: npm run lint-sass
+    md:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Lint story front matter
+              uses: namoscato/splinter@v1
+              with:
+                  src_paths: content/story
