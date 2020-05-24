@@ -41,6 +41,6 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
             - name: Lint story front matter
-              uses: namoscato/splinter@v1-dev
+              uses: namoscato/splinter@v1
               with:
                   src_paths: content/story
