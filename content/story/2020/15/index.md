@@ -3,7 +3,7 @@ title: "One day, I hope our primary focus is to produce productive citizens and 
 date: 2020-05-26T20:18:00-04:00
 slug: "produce-productive-citizens-good-human-beings"
 educator:
-    name: Dr. Rachel Fishbaugh
+    name: Dr. Rachel Fischbaugh
     role: Elementary Principal
     school: Fox Chapel Area School District
 ---
