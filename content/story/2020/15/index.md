@@ -1,5 +1,5 @@
 ---
-title: "One day, I hope our primary focus is to produce productive citizens and good human beings."
+title: "One day, I hope our primary focus is to produce productive citizens and good human beings"
 date: 2020-05-26T20:18:00-04:00
 slug: "produce-productive-citizens-good-human-beings"
 educator:

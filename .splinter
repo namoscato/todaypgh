@@ -1,2 +1,5 @@
 Define slug
 slug:\s*(""|~)
+
+Exclude title punctuation
+title:.+\W"\s*$
