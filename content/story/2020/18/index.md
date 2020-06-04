@@ -5,7 +5,6 @@ slug: "public-school-teachers-fight-systemic-injustices"
 educator:
     name: "Mr. Evan Hertrick"
     role: Elementary Band Educator
-    school: Fox Chapel Area School District
 ---
 
 {{< spacer >}}
