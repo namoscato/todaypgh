@@ -266,6 +266,25 @@ a.title-site {
         font-size: 1.1em;
     }
 
+    > blockquote {
+        color: $color-gray-dark;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin: 2em 0;
+        position: relative;
+        text-align: center;
+
+        &::before {
+            background: url('img/quote.png') 0 0 / 2.0625rem 1.384rem no-repeat;
+            filter: grayscale(1);
+            height: 1.384rem;
+            left: -2.7rem;
+            position: absolute;
+            top: 0;
+            width: 2.0625rem;
+        }
+    }
+
     a:not(.button):not(.social-icon) {
         border-bottom: 1px solid rgba($color-black, 0.7);
         color: inherit;
@@ -276,6 +295,10 @@ a.title-site {
             opacity: 0.8;
         }
     }
+}
+
+.content-spacer {
+    height: 1rem;
 }
 
 .icon {
@@ -516,6 +539,15 @@ a.story {
 
     #stories.is-homepage > li:first-child {
         display: none;
+    }
+
+    .content > blockquote {
+        margin-left: 2em;
+        text-align: left;
+
+        &::before {
+            content: '';
+        }
     }
 }
 
