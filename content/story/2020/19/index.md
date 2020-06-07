@@ -10,6 +10,10 @@ educator:
         twitter: MsP412
 ---
 
+#### What is your educational background?
+
+I received my bachelor's degree from IUP in Child Development and a minor in Educational Psychology. I then pursued my master's degree from Carlow in Early Childhood Education.
+
 #### What or who inspired you to become an educator?
 
 My mom was a teacher, and I always wanted to follow in her footsteps. I would often go to school with her in the summer to help pack her room up and then decorate her room for the upcoming school year. She loved teaching. It was contagious because her students loved coming to her class, and they loved learning because of her.
