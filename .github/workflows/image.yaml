@@ -15,3 +15,4 @@ jobs:
         with:
           api_key: ${{ secrets.TINIFY_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          resize_width: 1440
