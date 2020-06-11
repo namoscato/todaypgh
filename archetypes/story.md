@@ -13,6 +13,8 @@ educator:
         twitter: ~
 ---
 
+#### What is your educational background?
+
 #### What or who inspired you to become an educator?
 
 #### What roles have you had in the sphere of education?
