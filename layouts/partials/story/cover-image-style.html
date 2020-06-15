@@ -1,0 +1,5 @@
+{{- $style := partial "story/cover-image.html" . | printf `background-image: url('%s')` | slice -}}
+{{- with .Params.cover_image_position -}}
+{{- $style = $style | append (printf "background-position: %s" .)  -}}
+{{- end -}}
+{{- delimit $style "; " -}}
