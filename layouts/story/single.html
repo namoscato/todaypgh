@@ -63,7 +63,7 @@
         </div>
     </section>
 </header>
-<div class="story-image is-cover" style="background-image: url('{{ partial "story/cover-image.html" . }}')"></div>
+<div class="story-image is-cover" {{ partial "story/cover-image-style.html" . | printf "style=%q" | safeHTMLAttr }}></div>
 <div class="layout-cover">
     <aside class="layout-cover-secondary is-shaded-top-left">
         <div class="content">
@@ -116,7 +116,7 @@
     </aside>
     <section class="layout-cover-primary">
         <div class="layout-cover-primary-content">
-            <div class="story-image" style="background-image: url('{{ partial "story/cover-image.html" . }}')"></div>
+            <div class="story-image" {{ partial "story/cover-image-style.html" . | printf "style=%q" | safeHTMLAttr }}></div>
         </div>
     </section>
 </div>
