@@ -2,7 +2,6 @@
 title: "One day, I hope that educators will understand the challenges facing students learning English and support them in their language development"
 date: 2020-06-17T19:32:16-04:00
 slug: "educators-understand-student-english-language-development-challenge"
-cover_image_position: top center
 educator:
     name: Mrs. Megan Skidmore
     role: Kindergarten Educator
