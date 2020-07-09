@@ -5,7 +5,7 @@ slug: "world-has-collectivist-approach-humanity"
 educator:
     name: Mr. Alexander Slaughter
     role: Music Educator
-    school: Propel Charter Schools
+    school: Propel Schools
     contact:
         linkedin: alexander-slaughter-a71b55164
 ---
