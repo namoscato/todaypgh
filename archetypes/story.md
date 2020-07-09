@@ -11,6 +11,7 @@ educator:
         instagram: ~
         facebook: ~
         twitter: ~
+        linkedin: ~
 ---
 
 #### What is your educational background?
@@ -20,5 +21,7 @@ educator:
 #### What roles have you had in the sphere of education?
 
 #### Why are you still in the field of education?
+
+#### What changes can you make to shift the field towards equity and justice?
 
 #### One day what do you hope for?

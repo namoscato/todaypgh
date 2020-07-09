@@ -104,6 +104,13 @@
                         </a>
                     </li>
                     {{ end }}
+                    {{ with .linkedin }}
+                    <li>
+                        <a class="social-icon" href="https://www.linkedin.com/in/{{ . }}" rel="noopener" target="_blank" title="{{ printf "%s’s LinkedIn Profile" $educator.name }}">
+                            {{ partial "social/linkedin.html" . }}
+                        </a>
+                    </li>
+                    {{ end }}
                 </ul>
                 {{ end }}
                 <p class="story-meta-posted">
