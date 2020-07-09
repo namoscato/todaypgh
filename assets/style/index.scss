@@ -301,6 +301,23 @@ a.title-site {
     height: 1rem;
 }
 
+.content-video {
+    margin-top: 2em;
+    padding-top: 56%;
+    position: relative;
+    width: 100%;
+
+    > iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
 .icon {
     font-family: sans-serif;
 }
@@ -348,6 +365,10 @@ a.title-site {
 
     &.facebook {
         fill: #1877f2 !important;
+    }
+
+    &.linkedin {
+        fill: #0077b5 !important;
     }
 }
 
