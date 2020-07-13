@@ -1,1 +1,2 @@
-{{- printf "%s’s Story - Pittsburgh Educator - %s" (partial "story/educator-name.html" .) .Site.Params.title -}}
+{{- $noun := cond (isset .Params.educator "is_student") "Student" "Educator" -}}
+{{- printf "%s’s Story - Pittsburgh %s - %s" (partial "story/educator-name.html" .) $noun .Site.Params.title -}}
