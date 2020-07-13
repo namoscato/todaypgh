@@ -334,21 +334,25 @@ a.title-site {
     }
 }
 
-.social-icon > svg {
-    fill: #919191;
-    height: 1.4em;
-    pointer-events: none;
-    transition: fill $transition-duration;
-    width: 1.4em;
+.social-icon {
+    display: inline-block;
 
-    &.is-scaled {
-        font-size: 1.25em;
-        margin: -0.15em 0;
-    }
+    > svg {
+        fill: #919191;
+        height: 1.4em;
+        pointer-events: none;
+        transition: fill $transition-duration;
+        width: 1.4em;
 
-    &.globe {
-        margin-left: -0.2em;
-        margin-right: -0.2em;
+        &.is-scaled {
+            font-size: 1.25em;
+            margin: -0.15em 0;
+        }
+
+        &.globe {
+            margin-left: -0.2em;
+            margin-right: -0.2em;
+        }
     }
 }
 
