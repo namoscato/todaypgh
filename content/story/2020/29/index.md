@@ -11,6 +11,8 @@ educator:
 
 #### America At Its Core
 
+_Performed at [North Allegheny's Virtual Concert for Racial Justice](https://givebutter.com/ZF5K9b) on July 12, 2020. Donate to Pittsburgh-based organizations that advocate for racial justice in education and the arts [here](https://givebutter.com/ZF5K9b)._
+
 {{< youtube zyt1H3tcZgY >}}
 
 {{< stanza >}}
@@ -65,6 +67,6 @@ But racism has been seeping through the holes of our communities for centuries a
 {{< stanza >}}
 It is through this fear of hurting others that we need to start reading and learning.
 And this want and need to learn more is now finally spreading,
-But, as my friend says, keep your foot on the petal, because we can not forget
+But, as my friend says, keep your foot on the pedal, because we can not forget
 That this will take some time, and we are definitely not done yet.
 {{< /stanza >}}

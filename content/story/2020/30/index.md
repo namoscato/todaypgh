@@ -1,6 +1,6 @@
 ---
 title: "One day, I hope my students will say: Mrs. Rawlings, though she kept it raw, cared for and loved us! I am who I am because of her"
-date: 2020-07-13T17:00:00-04:00
+date: 2020-07-14T17:00:00-04:00
 slug: "students-say-she-cared-loved-us"
 educator:
     name: Mrs. Jacquetta Henderson-Rawlings
