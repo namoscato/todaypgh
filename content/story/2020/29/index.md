@@ -1,7 +1,7 @@
 ---
-title: "One day, I hope people realize that as an African American person, I am no different than my counterparts"
+title: "One day, I hope my students will say: Mrs. Rawlings, though she kept it raw, cared for and loved us! I am who I am because of her"
 date: 2020-07-12T17:44:02-04:00
-slug: "african-american-person-no-different-than-counterparts"
+slug: "students-say-she-cared-loved-us"
 educator:
     name: Mrs. Jacquetta Henderson-Rawlings
     role: Middle School Science Educator
