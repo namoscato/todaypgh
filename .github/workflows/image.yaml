@@ -1,7 +1,6 @@
 name: image
 on:
   pull_request:
-    types: [opened]
 jobs:
   compress:
     runs-on: ubuntu-latest
