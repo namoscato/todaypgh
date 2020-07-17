@@ -8,9 +8,9 @@ educator:
     school: North Allegheny School District
     contact:
         website: http://www.naband.org
-        instagram: https://www.instagram.com/na_bands/
-        facebook: https://www.facebook.com/northalleghenybands/
-        twitter: https://twitter.com/northa_bands
+        instagram: na_bands
+        facebook: northalleghenybands
+        twitter: northa_bands
 ---
 
 #### What is your educational background?
