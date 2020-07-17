@@ -15,7 +15,7 @@ educator:
 
 #### What is your educational background?
 
-I am a 1992 Graduate of Seneca Valley High School. In addition, I am a 1997 graduate from the Dana School of Music at Youngstown State University with a bachelors degree in music education and applied percussion.  I completed my master’s degree in music education from the Pennsylvania State University.
+I am a 1992 Graduate of Seneca Valley High School. In addition, I am a 1997 graduate from the Dana School of Music at Youngstown State University with a bachelors degree in music education and applied percussion.  I completed all course work for my master’s degree in music education from the Pennsylvania State University.
 
 #### What or who inspired you to become an educator?
 
