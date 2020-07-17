@@ -5,7 +5,8 @@ slug: "students-realize-group-importance"
 educator:
     name: Mr. Evan Hertrick
     role: Elementary Band Educator
-    school: Fox Chapel Area School District
+schools:
+- Fox Chapel Area School District
 ---
 
 #### What inspired you to become an educator?

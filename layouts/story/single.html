@@ -72,7 +72,9 @@
             <div class="story-meta">
                 <ul class="story-meta-list">
                     {{ with .role }}<li>{{ . }}</li>{{ end }}
-                    {{ with .school }}<li>{{ . }}</li>{{ end }}
+                    {{ with (index ($.GetTerms "schools") 0) -}}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{- end }}
                 </ul>
                 {{ with .contact }}
                 <ul class="story-meta-social">

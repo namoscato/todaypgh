@@ -239,11 +239,6 @@ a.title-site {
     display: inline-block;
     font-size: 0.9em;
     font-weight: 600;
-    text-transform: lowercase;
-
-    &::first-letter {
-        text-transform: uppercase;
-    }
 }
 
 .content {

@@ -1,0 +1,55 @@
+{{ define "response" }}
+
+{{- $mentionsTwitter := slice -}}
+{{- $mentionsFacebook := slice -}}
+{{- $mentionsInstagram := slice -}}
+
+{{- range (.GetTerms "schools") -}}
+{{- with .Params.social.twitter }}{{ $mentionsTwitter = $mentionsTwitter | append . }}{{ end -}}
+{{- with .Params.social.facebook }}{{ $mentionsFacebook = $mentionsFacebook | append . }}{{ end -}}
+{{- with .Params.social.instagram }}{{ $mentionsInstagram = $mentionsInstagram | append . }}{{ end -}}
+{{- end -}}
+
+{{- $educator := .Params.educator -}}
+
+{
+    "SocialMediaPosting": [
+        {
+            "@context": "http://schema.org",
+            "@type": "SocialMediaPosting",
+            "publisher": {
+                "@type": "Organization",
+                "url": "https://twitter.com",
+                "name": "Twitter"
+            },
+            "headline": {{ partial "story/title.html" . | jsonify }},
+            "image": {{ partial "story/cover-image.html" . | jsonify }},
+            "text": {{ printf "“%s…”\n\n– %s, %s @%s %s" .Title $educator.name $educator.role (delimit $mentionsTwitter " @") .Permalink | jsonify }}
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "SocialMediaPosting",
+            "publisher": {
+                "@type": "Organization",
+                "url": "https://www.facebook.com",
+                "name": "Facebook"
+            },
+            "headline": {{ partial "story/title.html" . | jsonify }},
+            "image": {{ partial "story/cover-image.html" . | jsonify }},
+            "text": {{ printf "“%s…”\n\n– %s, %s\n\n@%s\n\n%s" .Title $educator.name $educator.role (delimit $mentionsFacebook "\n@") .Permalink | jsonify }}
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "SocialMediaPosting",
+            "publisher": {
+                "@type": "Organization",
+                "url": "https://www.instagram.com",
+                "name": "Instagram"
+            },
+            "headline": {{ partial "story/title.html" . | jsonify }},
+            "image": {{ partial "story/cover-image.html" . | jsonify }},
+            "text": {{ printf "“%s…”\n\n– %s, %s\n\n@%s" .Title $educator.name $educator.role (delimit $mentionsInstagram " @") | jsonify }}
+        }
+    ]
+}
+{{ end }}
