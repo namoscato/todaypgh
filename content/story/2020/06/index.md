@@ -5,9 +5,10 @@ slug: "creativity-integrated-curriculum"
 educator:
     name: Mrs. Karen Amoscato
     role: First Grade Educator
-    school: North Allegheny School District
     contact:
         website: https://karen.amoscato.com
+schools:
+- North Allegheny School District
 ---
 
 #### What inspired you to become an educator?

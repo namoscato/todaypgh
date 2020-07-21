@@ -5,7 +5,8 @@ slug: "end-career-with-same-enthusiasm-as-start"
 educator:
     name: Mr. Eric Grove
     role: Physical Education Educator
-    school: Seneca Valley School District
+schools:
+- Seneca Valley School District
 ---
 
 #### What or who inspired you to become an educator?

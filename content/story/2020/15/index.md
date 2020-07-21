@@ -5,7 +5,8 @@ slug: "produce-productive-citizens-good-human-beings"
 educator:
     name: Dr. Rachel Fischbaugh
     role: Elementary Principal
-    school: Fox Chapel Area School District
+schools:
+- Fox Chapel Area School District
 ---
 
 #### What or who inspired you to become an educator?

@@ -5,9 +5,12 @@ slug: "education-powerful-weapon-to-change-world"
 educator:
     name: Mr. Nick Kelly
     role: Kindergarten Educator
-    school: Fox Chapel Area School District
     contact:
         website: https://sites.google.com/cl.fcasd.edu/mr-kellys-class/home
+schools:
+- Fox Chapel Area School District
+- Saint Francis University
+- California University of Pennsylvania
 ---
 
 #### What is your educational background?

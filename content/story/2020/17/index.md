@@ -5,7 +5,8 @@ slug: "teachers-prepare-future-for-all"
 educator:
     name: Mr. Bill Hildenbrand
     role: High School Educator
-    school: North Allegheny School District
+schools:
+- North Allegheny School District
 ---
 
 #### What or who inspired you to become an educator?

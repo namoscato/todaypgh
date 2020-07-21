@@ -5,7 +5,9 @@ slug: "students-say-she-cared-loved-us"
 educator:
     name: Mrs. Jacquetta Henderson-Rawlings
     role: Middle School Science Educator
-    school: Propel Schools
+schools:
+- Propel Schools
+- Carlow University
 ---
 
 #### What is your educational background?

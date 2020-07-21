@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="layout">
+    <aside class="layout-secondary"></aside>
+    <section class="layout-primary">
+        <div class="content">
+            <ul class="school-list">
+                {{ range $index, $school := .Pages }}
+                <li>
+                    {{- if gt $index 0 }}&bull; {{ end -}}
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </section>
+</div>
+{{ end }}

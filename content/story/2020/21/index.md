@@ -6,7 +6,8 @@ cover_image_position: left center
 educator:
     name: Mrs. Lynn DePellegrini
     role: Third Grade Educator
-    school: Fox Chapel Area School District
+schools:
+- Fox Chapel Area School District
 ---
 
 #### What or who inspired you to become an educator?

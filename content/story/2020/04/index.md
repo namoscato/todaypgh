@@ -5,7 +5,8 @@ slug: "music-continue-public-school-setting"
 educator:
     name: Mrs. Susan Dinger
     role: Elementary Music Educator
-    school: Seneca Valley School District
+schools:
+- Seneca Valley School District
 ---
 
 #### What inspired you to become an educator?
