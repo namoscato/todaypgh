@@ -5,9 +5,10 @@ slug: "remember-magic-making-music-together"
 educator:
     name: Mrs. Sarah Lavelle
     role: High School Orchestra Educator
-    school: North Allegheny School District
     contact:
         twitter: orchestra199
+schools:
+- North Allegheny School District
 ---
 
 #### What or who inspired you to become an educator?

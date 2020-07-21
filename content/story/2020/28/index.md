@@ -5,9 +5,12 @@ slug: "world-has-collectivist-approach-humanity"
 educator:
     name: Mr. Alexander Slaughter
     role: Music Educator
-    school: Propel Schools
     contact:
         linkedin: alexander-slaughter-a71b55164
+schools:
+- Propel Schools
+- Mansfield University
+- Duquesne University
 ---
 
 #### What is your educational background?

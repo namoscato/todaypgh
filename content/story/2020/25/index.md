@@ -5,10 +5,11 @@ slug: "world-provides-people-opportunities-platforms-pursue-passions"
 educator:
     name: Mr. Ronnie Ziccardi
     role: Elementary Band Educator
-    school: Avonworth School District
     contact:
         website: https://sites.google.com/site/avonworthelementaryband
         twitter: Mr_Ziccardi
+schools:
+- Avonworth School District
 ---
 
 #### What is your educational background?

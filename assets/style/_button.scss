@@ -2,18 +2,19 @@
 
 .button {
     background-color: rgba($color-white, 0.7);
-    border: 1px solid $color-navy;
+    border: 1px solid $color-navy !important;
     border-radius: $border-radius;
     box-shadow: 1px 1px 0 1px $color-navy;
-    color: $color-navy;
+    color: $color-navy !important;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
     line-height: 1;
     margin: 0 1px 1px 0;
+    opacity: 1 !important;
     padding: 0.6em 0.7em 0.7em;
     text-decoration: none;
-    transition: background-color $transition-duration;
+    transition: background-color $transition-duration !important;
 
     &:hover,
     &:focus {

@@ -5,11 +5,12 @@ slug: "future-students-beyond-school"
 educator:
     name: Miss Stephanie Schultz
     role: Kindergarten Educator
-    school: Seneca Valley School District
     contact:
         website: http://kindershenanigans.com
         instagram: kindershenanigans
         facebook: kindershenanigans
+schools:
+- Seneca Valley School District
 ---
 
 #### What inspired you to become an educator?

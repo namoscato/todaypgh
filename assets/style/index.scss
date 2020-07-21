@@ -1,5 +1,6 @@
 @import 'button';
 @import 'form';
+@import 'school';
 @import 'variable';
 
 html,
@@ -280,7 +281,7 @@ a.title-site {
         }
     }
 
-    a:not(.button):not(.social-icon) {
+    a {
         border-bottom: 1px solid rgba($color-black, 0.7);
         color: inherit;
         text-decoration: none;
@@ -330,7 +331,9 @@ a.title-site {
 }
 
 .social-icon {
+    border-bottom: 0 !important;
     display: inline-block;
+    opacity: 1 !important;
 
     > svg {
         fill: #919191;

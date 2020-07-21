@@ -5,8 +5,9 @@ slug: "realize-small-things-are-where-racism-originate"
 educator:
     name: Miss Jenny Zhu
     role: Senior Student
-    school: North Allegheny School District
     is_student: true
+schools:
+- North Allegheny School District
 ---
 
 #### America At Its Core

@@ -5,7 +5,8 @@ slug: "teaching-harder-rocket-science"
 educator:
     name: Mrs. Barbara Scully
     role: Kindergarten Educator
-    school: Fox Chapel Area School District
+schools:
+- Fox Chapel Area School District
 ---
 
 #### What inspired you to become an educator?

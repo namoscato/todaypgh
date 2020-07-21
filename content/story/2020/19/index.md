@@ -5,9 +5,12 @@ slug: "universal-pre-k-closes-educational-gaps-early"
 educator:
     name: Ms. Sara Podvasnik
     role: Pre-kindergarten Educator
-    school: Duquesne City School District
     contact:
         twitter: MsP412
+schools:
+- Duquesne City School District
+- Indiana University of Pennsylvania
+- Carlow University
 ---
 
 #### What is your educational background?

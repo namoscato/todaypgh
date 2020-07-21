@@ -5,7 +5,8 @@ slug: "educator-inclusive-public-school-music-education"
 educator:
     name: Mrs. Judith Meyers
     role: Elementary Orchestra Educator
-    school: Fox Chapel Area School District
+schools:
+- Fox Chapel Area School District
 ---
 
 #### What or who inspired you to become an educator?

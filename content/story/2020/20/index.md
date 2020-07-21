@@ -5,9 +5,12 @@ slug: "public-realize-importance-schools-youth"
 educator:
     name: Mrs. Jennifer Galmoff
     role: Middle School English Educator
-    school: Kiski Area School District
     contact:
         twitter: JenGalmoff
+schools:
+- Kiski Area School District
+- Clarion University
+- Gannon University
 ---
 
 #### What is your educational background?

@@ -6,10 +6,12 @@ cover_image_position: right center
 educator:
     name: Mrs. Samantha Andrzejewski
     role: First Grade Educator
-    school: Northside Independent School District
     contact:
         instagram: samrhymeswithham
         twitter: mrs_andrz
+schools:
+- Northside Independent School District
+- University of Pittsburgh
 ---
 
 #### What is your educational background?

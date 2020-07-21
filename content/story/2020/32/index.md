@@ -5,9 +5,12 @@ slug: "education-is-hope-think-feel-reason-question-better-world"
 educator:
     name: Mr. Robert Eastwood
     role: Kindergarten Educator
-    school: Propel Schools
     contact:
         linkedin: bobby-eastwood-a544251b0
+schools:
+- Propel Schools
+- Mansfield University
+- University of Pittsburgh
 ---
 
 #### What is your educational background?

@@ -1,0 +1,11 @@
+.school-list {
+    font-size: 1.6em;
+    line-height: 1.8;
+    list-style-type: none;
+    margin: 1em 0 0;
+    padding: 0;
+
+    > li {
+        display: inline;
+    }
+}

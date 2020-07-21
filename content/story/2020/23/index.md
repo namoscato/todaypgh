@@ -5,7 +5,8 @@ slug: "children-achieve-potential-on-their-abilities"
 educator:
     name: Mrs. Katherine Hook
     role: Special Education Educator
-    school: Fox Chapel Area School District
+schools:
+- Fox Chapel Area School District
 ---
 
 #### What or who inspired you to become an educator?

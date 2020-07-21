@@ -5,12 +5,14 @@ slug: "people-kinder-more-loving-less-selfish-other-points-view"
 educator:
     name: Mr. Todd R. Stefan
     role: High School Band Educator
-    school: North Allegheny School District
     contact:
         website: http://www.naband.org
         instagram: na_bands
         facebook: northalleghenybands
         twitter: northa_bands
+schools:
+- North Allegheny School District
+- Youngstown State University
 ---
 
 #### What is your educational background?

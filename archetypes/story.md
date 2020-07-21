@@ -5,13 +5,14 @@ slug: ""
 educator:
     name: ~
     role: ~
-    school: ~
     contact:
         website: ~
         instagram: ~
         facebook: ~
         twitter: ~
         linkedin: ~
+schools:
+- ~
 ---
 
 #### What is your educational background?
