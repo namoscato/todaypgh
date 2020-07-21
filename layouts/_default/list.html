@@ -6,7 +6,7 @@
             <ul class="school-list">
                 {{ range $index, $school := .Pages }}
                 <li>
-                    {{- if gt $index 0 }}&bull; {{ end -}}
+                    {{- if gt $index 0 }}&nbsp;&bull;&nbsp;{{ end -}}
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </li>
                 {{ end }}
