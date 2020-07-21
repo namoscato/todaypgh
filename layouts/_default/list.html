@@ -4,12 +4,13 @@
     <section class="layout-primary">
         <div class="content">
             <ul class="school-list">
-                {{ range $index, $school := .Pages }}
+                {{- range $index, $school := .Pages.ByTitle -}}
                 <li>
-                    {{- if gt $index 0 }}&nbsp;&bull;&nbsp;{{ end -}}
+                    {{- if gt $index 0 }}&nbsp;&bull; {{ end -}}
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{- print "" -}}
                 </li>
-                {{ end }}
+                {{- end -}}
             </ul>
         </div>
     </section>
