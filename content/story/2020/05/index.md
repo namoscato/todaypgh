@@ -1,5 +1,5 @@
 ---
-title: "One day, I hope people realize teaching isn’t rocket science. In fact, it is harder"
+title: "One day, I hope people truly understand the value of play in early childhood education"
 date: 2020-05-03T18:00:00-04:00
 slug: "teaching-harder-rocket-science"
 educator:
@@ -11,7 +11,7 @@ schools:
 
 #### What inspired you to become an educator?
 
-I’ve always wanted to be an educator. One could say that education flows through my family. My grandparents were teachers, and they both had college degrees.  In addition, my sister is an educator, and my niece is a soon-to-be educator.  In addition to my family, I think one of my greatest inspirations was this idea that you shouldn’t be in a classroom and have someone make you cry or feel bad. Every child should feel loved, valued and wanted.  Helping people is at the heart of what I do.
+I’ve always wanted to be an educator. One could say that education flows through my family. My grandparents were teachers, and they both had college degrees. In addition, my sister is an educator, and my granddaughter is now an educator in Orange County School in North Carolina. In addition to my family, I think one of my greatest inspirations was this idea that you shouldn’t be in a classroom and have someone make you cry or feel bad. Every child should feel loved, valued and wanted.  Helping people is at the heart of what I do.
 
 #### What roles have you had in the sphere of education?
 
@@ -23,7 +23,7 @@ It is hard to believe, but I have been in the field of education for about fifty
 
 #### One day what do you hope for?
 
-People need to realize that through play and interactions with our peers, there is education. Especially for the little ones, the value of play is so incredibly important. I hope one day we get back to what is developmentally appropriate for each child.  Education has changed constantly over the years, but the way people develop and grow has not changed. This is important to remember. Over time, I have seen that motivation is seen through play and excitement. Conversation is so important, and this is fostered when play is encouraged. I hope people one day realize that interaction with students is so important. Teaching isn’t rocket science. In fact, it is harder. There are days sometimes when we feel like we have failed. You just have to keep going with a positive spirit and look for the sunshine.
+People need to realize that through play and interactions with our peers, there is education. Especially for the little ones, the value of play is so incredibly important. I hope one day we get back to what is developmentally appropriate for each child.  Education has changed constantly over the years, but the way people develop and grow has not changed. This is important to remember. Over time, I have seen that motivation is seen through play and excitement. Conversation is so important, and this is fostered when play is encouraged. I hope people one day realize that interaction with students is so important. “Teaching isn’t rocket science. In fact, it is harder” - Ryan Fuller. There are days sometimes when we feel like we have failed. You just have to keep going with a positive spirit and look for the sunshine.
 
 One of my favorite messages for the future is the following:
 
