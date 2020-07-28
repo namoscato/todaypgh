@@ -5,9 +5,6 @@ slug: "families-communities-receive-support-advocacy-provide-justice-equity-stud
 educator:
     name: Ms. Nora Fisher
     role: Special Education Educator
-schools:
-- Pittsburgh Public Schools
-- University of Pittsburgh
 ---
 
 #### What is your educational background?
