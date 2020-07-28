@@ -2,3 +2,31 @@
 {{ $js := resources.Get "script/spread/share.js" | resources.Minify }}
 <script src="{{ $js.Permalink }}" defer></script>
 {{ end }}
+
+{{ define "main" }}
+<main class="layout">
+    <aside class="layout-secondary is-shaded-top-left"></aside>
+    <section class="layout-primary utl-pt1">
+        <div class="content">
+            {{ block "content" . }}
+            {{ .Content }}
+            {{ end }}
+        </div>
+    </section>
+</main>
+<aside id="body">
+    <ul id="stories">
+        {{- range first 3 (where .Site.RegularPages "Type" "story") -}}
+        <li>
+            {{ .Render "summary" }}
+        </li>
+        {{ end -}}
+    </ul>
+    <div class="utl-text-center">
+        <a class="button" href="{{ (.Site.GetPage "/story").Permalink }}">
+            Read more stories
+            <span class="icon">↓</span>
+        </a>
+    </div>
+</aside>
+{{ end }}
