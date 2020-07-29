@@ -1,18 +1,20 @@
 {{ define "main" }}
-{{- $paginator := .Paginate (where .Pages "Type" "story") 12 }}
-<ul id="stories">
-    {{- range $paginator.Pages -}}
-    <li>
-        {{ .Render "summary" }}
-    </li>
-    {{ end -}}
-</ul>
-{{ if $paginator.HasNext }}
-<div class="utl-text-center">
-    <a class="button" href="{{ $paginator.Next.URL }}">
-        Read more stories
-        <span class="icon">↓</span>
-    </a>
-</div>
-{{ end }}
+<main id="body">
+    {{- $paginator := .Paginate (where .Pages "Type" "story") 12 }}
+    <ul id="stories">
+        {{- range $paginator.Pages -}}
+        <li>
+            {{ .Render "summary" }}
+        </li>
+        {{ end -}}
+    </ul>
+    {{ if $paginator.HasNext }}
+    <div class="utl-text-center">
+        <a class="button" href="{{ $paginator.Next.URL }}">
+            Read more stories
+            <span class="icon">↓</span>
+        </a>
+    </div>
+    {{ end }}
+</main>
 {{ end }}
