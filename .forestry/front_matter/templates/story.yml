@@ -21,6 +21,10 @@ fields:
   label: URL slug
   config:
     required: true
+- name: images
+  type: image_gallery
+  config: {}
+  label: Cover image
 - type: field_group
   name: educator
   label: Educator
