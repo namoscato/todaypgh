@@ -70,3 +70,4 @@ fields:
     source:
       type: simple
       section: schools
+  description: Current employer and alma maters
