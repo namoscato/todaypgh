@@ -1,0 +1,16 @@
+name: forestry
+on:
+  push:
+    branches: [forestry]
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Open pull request
+        uses: repo-sync/pull-request@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: Update from Forestry.io
+          pr_reviewer: namoscato
