@@ -1,33 +1,69 @@
 ---
 label: Story
 hide_body: false
+display_field: title
 fields:
 - type: textarea
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
+  default: One day,
+  description: Starts with "<strong>One day,</strong>". No trailing punctuation.
 - type: datetime
   name: date
-  label: date
+  label: Publish date
+  config:
+    required: true
+  default: now
 - type: text
   name: slug
-  label: slug
+  label: URL slug
+  config:
+    required: true
 - type: field_group
   name: educator
-  label: educator
+  label: Educator
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
+    description: Leave blank if anonymous
   - type: text
     name: role
-    label: role
+    label: Role
+    config:
+      required: true
+    default: ''
   - type: field_group
     name: contact
-    label: contact
+    label: Contact
     fields:
+    - name: website
+      type: text
+      config:
+        required: false
+      label: Website URL
+    - name: instagram
+      type: text
+      config:
+        required: false
+      label: Instagram handle
+    - name: facebook
+      type: text
+      config:
+        required: false
+      label: Facebook handle
     - type: text
       name: twitter
-      label: twitter
+      label: Twitter handle
+    - name: linkedin
+      type: text
+      config:
+        required: false
+      label: LinkedIn handle
 - type: list
   name: schools
-  label: schools
+  label: Schools
+  config:
+    use_select: false
