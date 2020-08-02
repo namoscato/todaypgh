@@ -66,4 +66,7 @@ fields:
   name: schools
   label: Schools
   config:
-    use_select: false
+    use_select: true
+    source:
+      type: pages
+      section: schools
