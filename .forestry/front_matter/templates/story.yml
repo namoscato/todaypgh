@@ -1,0 +1,33 @@
+---
+label: Story
+hide_body: false
+fields:
+- type: textarea
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: slug
+  label: slug
+- type: field_group
+  name: educator
+  label: educator
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: role
+    label: role
+  - type: field_group
+    name: contact
+    label: contact
+    fields:
+    - type: text
+      name: twitter
+      label: twitter
+- type: list
+  name: schools
+  label: schools
