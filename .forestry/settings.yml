@@ -5,17 +5,17 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content/spread-the-love
-  label: Pages
-  create: all
-  match: "**/*"
-- type: directory
   path: content/story
   label: Stories
   create: all
   match: "**/*"
   templates:
   - story
+- type: directory
+  path: content/spread-the-love
+  label: Pages
+  create: all
+  match: "**/*"
 - type: directory
   path: content/schools
   label: Schools
