@@ -1,0 +1,20 @@
+---
+label: School
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: social
+  label: social
+  fields:
+  - type: list
+    name: twitter
+    label: twitter
+  - type: list
+    name: facebook
+    label: facebook
+  - type: list
+    name: instagram
+    label: instagram
