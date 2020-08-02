@@ -11,9 +11,11 @@ sections:
   match: "*"
 - type: directory
   path: content/story
-  label: Story
+  label: Stories
   create: all
   match: "**/*"
+  templates:
+  - story
 - type: directory
   path: content/spread-the-love
   label: Spread the love
