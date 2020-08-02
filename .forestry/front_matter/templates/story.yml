@@ -75,3 +75,5 @@ fields:
       type: simple
       section: schools
   description: Current employer and alma maters
+pages:
+- content/story/one-day-testing.md
