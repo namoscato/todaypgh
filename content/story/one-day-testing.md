@@ -4,7 +4,7 @@ draft = true
 images = ["/uploads/pittsburgh-skyline.png"]
 schools = []
 slug = "testing"
-title = "One day, update"
+title = "One day, testing"
 [educator]
 name = ""
 role = "Educator"
