@@ -1,0 +1,82 @@
+---
+label: Story
+hide_body: false
+display_field: title
+fields:
+- type: textarea
+  name: title
+  label: Title
+  config:
+    required: true
+  default: 'One day, '
+  description: Starts with <strong>One day</strong>. No quotes or trailing punctuation.
+- type: datetime
+  name: date
+  label: Publish date
+  config:
+    required: true
+  default: now
+- type: text
+  name: slug
+  label: URL slug
+  config:
+    required: false
+  description: Dasherized summary displayed in the URL.
+- name: images
+  type: image_gallery
+  config: {}
+  label: Cover image
+- type: field_group
+  name: educator
+  label: Educator
+  fields:
+  - type: text
+    name: name
+    label: Name
+    description: Leave blank if anonymous
+  - type: text
+    name: role
+    label: Role
+    config:
+      required: true
+    default: ''
+  - name: is_student
+    type: boolean
+    label: Student?
+    description: Toggle <strong>on</strong> if this is a student.
+  - type: field_group
+    name: contact
+    label: Contact
+    fields:
+    - name: website
+      type: text
+      config:
+        required: false
+      label: Website URL
+    - name: instagram
+      type: text
+      config:
+        required: false
+      label: Instagram handle
+    - name: facebook
+      type: text
+      config:
+        required: false
+      label: Facebook handle
+    - type: text
+      name: twitter
+      label: Twitter handle
+    - name: linkedin
+      type: text
+      config:
+        required: false
+      label: LinkedIn handle
+- type: list
+  name: schools
+  label: Schools
+  config:
+    use_select: false
+    source:
+      type: simple
+      section: schools
+  description: Current employer and alma maters
