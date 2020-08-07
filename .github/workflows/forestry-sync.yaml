@@ -6,10 +6,13 @@ on:
 jobs:
   sync:
 #    if: github.event.pull_request.merged == true
+    if: github.head_ref == 'forestry'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ref: master
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
