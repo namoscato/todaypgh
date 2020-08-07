@@ -1,11 +1,11 @@
 name: forestry
 on:
   pull_request:
-    branches: [forestry]
+    branches: [master]
 #    types: [closed]
 jobs:
   sync:
-    if: github.event.pull_request.merged == true
+#    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
