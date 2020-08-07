@@ -21,6 +21,7 @@ fields:
   label: URL slug
   config:
     required: false
+  description: Dasherized summary displayed in the URL.
 - name: images
   type: image_gallery
   config: {}
