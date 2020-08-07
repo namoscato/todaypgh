@@ -8,8 +8,8 @@ fields:
   label: Title
   config:
     required: true
-  default: One day,
-  description: Starts with "<strong>One day,</strong>". No trailing punctuation.
+  default: 'One day, '
+  description: Starts with <strong>One day</strong>. No quotes or trailing punctuation.
 - type: datetime
   name: date
   label: Publish date
@@ -20,7 +20,7 @@ fields:
   name: slug
   label: URL slug
   config:
-    required: true
+    required: false
 - name: images
   type: image_gallery
   config: {}
@@ -39,6 +39,10 @@ fields:
     config:
       required: true
     default: ''
+  - name: is_student
+    type: boolean
+    label: Student?
+    description: Toggle <strong>on</strong> if this is a student.
   - type: field_group
     name: contact
     label: Contact
