@@ -1,0 +1,16 @@
+name: forestry
+on:
+  pull_request:
+    branches: [master]
+    types: [closed]
+jobs:
+  sync:
+    if: github.event.pull_request.merged == true && github.head_ref == 'forestry'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Update forestry branch
+        run: git push origin HEAD:forestry --force
