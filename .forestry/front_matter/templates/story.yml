@@ -80,3 +80,5 @@ fields:
       type: simple
       section: schools
   description: Current employer and alma maters
+pages:
+- content/story/2020/one-day-i-hope-that-students-will-leave-school-with-a-greater-understanding-of-the-world-and-the-experiences-of-their-peers.md
