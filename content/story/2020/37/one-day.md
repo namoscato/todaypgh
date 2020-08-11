@@ -2,7 +2,7 @@
 date = 2020-08-14T13:00:00Z
 draft = true
 images = ["/uploads/angeline_slick_mhja_-_angeline_chalifoux.jpg"]
-schools = []
+schools = ["North Allegheny School District"]
 slug = ""
 title = "One day, "
 [educator]
