@@ -4,7 +4,7 @@ draft = true
 images = ["/uploads/angeline_slick_mhja_-_angeline_chalifoux.jpg"]
 schools = ["North Allegheny School District"]
 slug = ""
-title = "One day, "
+title = "\"One day, I hope schools are a safe place for children to be themselves and explore new opportunities without acts of discrimination and microggressions.\""
 [educator]
 is_student = true
 name = "Angeline Chalifoux"
@@ -17,3 +17,18 @@ twitter = ""
 website = ""
 
 +++
+**Tell us a little bit about your educational background, hobbies, interests, etc.**
+
+I am a rising senior at North Allegheny Senior High School and have two younger siblings who are also in the district. I participate in the Chamber Orchestra and Golden Strolling Strings as a violinist. I am a high school mentor for STEM and Buds, and I co-founded the Sweets for Souls Baking Club. I am also a teen volunteer at UPMC Children's Hospital of Pittsburgh and have been a Girl Scout for the past ten years. When I am not at school, you can find me at Candy Lane Acres, where I lease a horse named Declan and am a member of the Interscholastic Equestrian Association team (the horse in the picture with me is Slick, who I took to a show when my first lease horse Luna was injured). If I do have a spare moment, I enjoy watching Dance Moms, the Great British Baking Show, and The Incredible Dr. Pol while eating whatever dessert my sister has made that week.
+
+**What Educational Injustices do you see inside and/or outside the walls of your own school? How can we begin to create more equitable spaces for learning?**
+
+Within my school, the majority of staff are white. The district can work to hire more people of color, which helps its non-white students feel like they are represented. Additionally, in U.S. history classes, there can be more time devoted to the mistreatment of minorities in America. It is very briefly glossed over in one paragraph of the textbook or never brought up at all. The same few events get described and are brought up again in a few years in the next history class. History classes teach white-washed curriculum, partly due to the textbooks that are chosen. I have learned a tremendous amount of knowledge about minorities and their experiences in America on my own time, by checking out books from libraries and doing Internet searches. I have also had the opportunity to visit the National Museum of African American History and Culture, which was extremely eye-opening and educational. Unfortunately, most of my peers (in a predominantly white student body) do not have the same amount of knowledge about minorities like I do. With the resources and money available for the district, it is possible to expand the curriculum to include these kinds of lessons about minorities and their histories. Sadly, the same cannot be said for other schools, particularly public ones in certain states. Funding needs to be increased for public education to make public schools across the country more equitable.
+
+**What is it that you hope to do in the future? How does it relate to this important work?**
+
+I want to be an educator in the future, either in primary education or teaching history. Leading One Day will not only allow me to practice my leadership skills, but it will also prepare me and give me experience to be a teacher. The lessons from One Day will help me to recognize inequities in the school systems and learn ways to improve these situations. I can start to have a voice now and carry it with me through the rest of my school years.
+
+**One Day...what do you hope for? (in regards to education)**
+
+One Day, I hope that there are more opportunities for all children to receive an equitable education. Through no fault of their own, some children start at a disadvantage in their life, and it can be difficult for them to progress. Several of society's issues can be solved and/or improved by allowing kids to attend well-funded schools. Since private schools are oftentimes not an affordable option for some families, we all need to make sure that we are supporting public education and not taking away money from it. I also want all students to feel like their voices are being heard. Acts of discrimination and microaggressions can be reported to the school districts with little to no consequences for the perpetrator(s). Instead, sometimes the victim receives the blame, and from very early on, kids are expected to endure racism, sexism, etc. without seeing a lot of support from their school. An African American student should not have to walk out into the school parking lot and see a Confederate flag sticker on a peer's car. A girl should not have to worry about "showing too much" of her shoulder and not being distracting to the boys in school. A student of color should not be discouraged from auditioning for a school musical because all of the lead roles have gone to only white students in the past. School should be a safe place for children to be themselves and explore new opportunities; they cannot do that if they do not feel like they are accepted and protected. Instead of covering up incidents like the ones described above, we should be talking about them and creating solutions to ensure that they do not continue to happen. It is important to listen to what happens within schools, so that children can be taught what is right and what is wrong, thus creating a more accepting society.
