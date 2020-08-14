@@ -1,6 +1,5 @@
 +++
-date = 2020-08-10T21:02:02Z
-draft = true
+date = 2020-08-12T19:00:00-04:00
 images = ["/uploads/amara_ostroff.jpg"]
 schools = ["Fox Chapel Area School District"]
 slug = "students-leave-school-greater-understanding-world-experience-peers"
