@@ -1,5 +1,5 @@
 {{- with .Params.images -}}
-{{- index . 0 -}}
+{{- index . 0 | absURL -}}
 {{- else -}}
 {{- $images := $.Resources.ByType "image" -}}
 {{- $image := $images.GetMatch "*cover*" -}}
