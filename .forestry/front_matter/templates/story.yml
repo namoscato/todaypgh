@@ -80,3 +80,5 @@ fields:
       type: simple
       section: schools
   description: Current employer and alma maters
+pages:
+- content/story/2020/40.md
