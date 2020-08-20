@@ -1,5 +1,5 @@
 Define slug
-slug:\s*(""|~)
+slug(:|\s*=)\s*(""|~)
 
 Exclude title punctuation
-title:.+\W"\s*$
+title(:|\s*=).+\W"\s*$
