@@ -1,0 +1,32 @@
+body.is-home-page #footer {
+    padding-bottom: 12em;
+}
+
+#book-sherpa {
+    bottom: -4em;
+    left: -3em;
+    position: fixed;
+    transition: filter $transition-duration;
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+        filter: brightness(1.05);
+    }
+
+    > img {
+        display: block;
+        width: 16em;
+    }
+}
+
+@media (min-width: $breakpoint-sm) {
+    body.is-home-page #footer {
+        padding-bottom: 15em;
+    }
+
+    #book-sherpa {
+        bottom: 0;
+        left: 0;
+    }
+}

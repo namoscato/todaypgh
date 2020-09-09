@@ -1,7 +1,8 @@
+@import 'variable';
+@import 'book';
 @import 'button';
 @import 'form';
 @import 'school';
-@import 'variable';
 
 html,
 body {
@@ -502,7 +503,7 @@ a.story {
     text-align: center;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: $breakpoint-sm) {
     #homepage-header {
         align-items: center;
         display: flex;
