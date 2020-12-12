@@ -1,5 +1,5 @@
 /* global $, btoa, ClipboardJS, ga */
-(function () {
+;(function () {
   const form = $('#spread-form')
   const link = $('#spread-link')
   const linkBack = $('#spread-link-back')
@@ -25,7 +25,12 @@
 
       me.attr(
         'href',
-        me.attr('href').replace(shareUrlEncoded, encodeURIComponent(getReferrerUrl(me.data('share-social'))))
+        me
+          .attr('href')
+          .replace(
+            shareUrlEncoded,
+            encodeURIComponent(getReferrerUrl(me.data('share-social')))
+          )
       )
     })
 
@@ -67,11 +72,19 @@
   })
 
   function getReferrerUrl (medium) {
-    return shareUrl + '?r=' + encodeURIComponent(btoa(JSON.stringify({
-      email: referrerEmail,
-      name: referrerName,
-      medium: medium
-    })))
+    return (
+      shareUrl +
+      '?r=' +
+      encodeURIComponent(
+        btoa(
+          JSON.stringify({
+            email: referrerEmail,
+            name: referrerName,
+            medium: medium
+          })
+        )
+      )
+    )
   }
 
   function trackEvent (action, label) {

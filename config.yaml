@@ -1,9 +1,9 @@
 baseURL: https://www.todaypgh.com/
 languageCode: en-us
-title: "TodayPGH - Inspirational Stories of Pittsburgh Educators"
+title: 'TodayPGH - Inspirational Stories of Pittsburgh Educators'
 params:
   title: TodayPGH
-  description: "TodayPGH shares stories of Pittsburgh educators to inspire future generations, lift up the profession, and build bridges of empathy. The project transcends across school districts and grade levels, opening new windows into the field."
+  description: 'TodayPGH shares stories of Pittsburgh educators to inspire future generations, lift up the profession, and build bridges of empathy. The project transcends across school districts and grade levels, opening new windows into the field.'
   images:
     - img/feature.jpg
 outputs:

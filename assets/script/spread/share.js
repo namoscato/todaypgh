@@ -1,5 +1,5 @@
 /* global $, atob, ga */
-(function () {
+;(function () {
   let referrer = getUrlParam('r')
 
   if (!referrer) {
@@ -28,7 +28,7 @@
     shareLink.attr(
       'href',
       shareLink.data('prefilled-url') +
-      encodeURIComponent(paramParts.join(' - '))
+        encodeURIComponent(paramParts.join(' - '))
     )
 
     ga('set', {
@@ -47,7 +47,9 @@
       paramParts = params[i].split('=')
 
       if (paramParts[0] === name) {
-        return undefined === paramParts[1] ? null : decodeURIComponent(paramParts[1])
+        return undefined === paramParts[1]
+          ? null
+          : decodeURIComponent(paramParts[1])
       }
     }
   }

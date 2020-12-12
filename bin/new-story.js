@@ -11,7 +11,9 @@ if (!existsSync(storyDir)) {
   mkdirSync(storyDir)
 }
 
-const stories = readdirSync(storyDir).filter(name => lstatSync(join(storyDir, name)).isDirectory())
+const stories = readdirSync(storyDir).filter(name =>
+  lstatSync(join(storyDir, name)).isDirectory()
+)
 const number = 1 + stories.length
 
 execSync(`hugo new ${storyPath}/${number < 10 ? '0' : ''}${number}/index.md`)

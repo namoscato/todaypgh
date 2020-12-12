@@ -59,7 +59,8 @@ p {
     position: relative;
 
     &::before {
-        background: url('img/bridge2.png') center top / 41.6875rem 12.84375rem no-repeat;
+        background: url('img/bridge2.png') center top / 41.6875rem 12.84375rem
+            no-repeat;
         bottom: -4.9rem;
         content: '';
         height: 12.84375rem;
@@ -76,7 +77,8 @@ p {
     position: relative;
 
     &::before {
-        background: url('img/bridge2.png') right top / 54.9748rem 16.9375rem no-repeat;
+        background: url('img/bridge2.png') right top / 54.9748rem 16.9375rem
+            no-repeat;
         bottom: 0;
         content: '';
         filter: grayscale(1);
@@ -143,7 +145,8 @@ p {
 }
 
 #footer-bridge {
-    background: url('img/bridge2.png') center top / 41.6875rem 12.84375rem no-repeat;
+    background: url('img/bridge2.png') center top / 41.6875rem 12.84375rem
+        no-repeat;
     height: 12.84375rem;
     margin: -12rem auto 0;
     max-width: 100%;
@@ -686,7 +689,8 @@ a.story {
     }
 
     .is-shaded-top-left::before {
-        background: url('img/bridge2.png') right top / 69.4792rem 21.40625rem no-repeat;
+        background: url('img/bridge2.png') right top / 69.4792rem 21.40625rem
+            no-repeat;
         content: '';
         filter: grayscale(1);
         height: 9.90625rem;
