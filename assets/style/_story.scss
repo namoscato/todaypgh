@@ -1,0 +1,15 @@
+.story-figure {
+    margin: 2rem auto 0;
+    max-width: 35rem;
+    position: relative;
+
+    > img {
+        width: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .story-figure-courage {
+        margin: -3rem 0 -1rem -23rem;
+    }
+}
