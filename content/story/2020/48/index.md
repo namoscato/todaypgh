@@ -1,5 +1,5 @@
 +++
-date = 2020-12-14T00:17:40Z
+date = 2020-12-14T00:17:10Z
 images = ["/uploads/nancy_shi.jpg"]
 schools = ["Highline Public Schools"]
 slug = "teachers-students-valued-who-they-are"
@@ -16,9 +16,6 @@ twitter = "classofshi"
 website = ""
 
 +++
-
-{{< figure src="courage.png" alt="Courage" class="story-figure story-figure-courage" >}}
-
 #### What is your educational background?
 
 University of Pittsburgh, M.Ed.

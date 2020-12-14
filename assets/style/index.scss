@@ -4,6 +4,7 @@
 @import 'doors';
 @import 'form';
 @import 'school';
+@import 'story';
 
 html,
 body {
@@ -580,7 +581,7 @@ a.story {
     }
 }
 
-@media (min-width: 67.625rem) {
+@media (min-width: $breakpoint-md) {
     #header {
         padding: 3rem 2rem;
 
