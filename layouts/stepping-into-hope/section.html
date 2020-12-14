@@ -1,0 +1,38 @@
+{{ define "main" }}
+<aside class="layout">
+    <aside class="layout-secondary is-shaded-top-left"></aside>
+    <section class="layout-primary utl-pt1">
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </section>
+</aside>
+<main id="body">
+    <ul id="doors">
+        {{ range $index, $href := .Params.stories }}
+        <li>
+            <a href="{{ relref ($.Site.GetPage "/") $href }}" id="door-{{ add $index 1 }}" class="door">
+                <figure class="door-figure">
+                    <img class="door-image" src="images/door-{{ add $index 1 }}.png" />
+                    <figcaption class="door-caption">
+                        Day {{ add $index 1 }}
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+        {{ end }}
+        {{ range $sequence := after (len .Params.stories) (seq .Params.door_count) }}
+        <li>
+            <div id="door-{{ $sequence }}" class="door is-disabled">
+                <figure class="door-figure">
+                    <img class="door-image" src="images/door-{{ $sequence }}.png" />
+                    <figcaption class="door-caption">
+                        Day {{ $sequence }}
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+        {{ end }}
+    </ul>
+</main>
+{{ end }}
