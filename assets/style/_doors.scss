@@ -1,0 +1,97 @@
+#doors {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 2rem 1rem 0;
+
+    > li {
+        box-sizing: border-box;
+        margin-bottom: 3rem;
+    }
+}
+
+.door {
+    display: block;
+    text-align: center;
+
+    &.is-disabled {
+        filter: grayscale(1) blur(0.7rem);
+    }
+}
+
+a.door {
+    color: inherit;
+    transition: color $transition-duration;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-navy;
+
+        .door-image {
+            filter: brightness(1.09);
+        }
+    }
+}
+
+.door-figure {
+    margin: 0;
+}
+
+.door-image {
+    transition: filter $transition-duration;
+    width: 100%;
+}
+
+.door-caption {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+#door-1 .door-image {
+    margin-bottom: 0.75rem;
+}
+
+#door-3 .door-image {
+    margin-bottom: -0.9375rem;
+}
+
+#door-7 .door-image {
+    margin: 0 -1.875rem -1.5625rem;
+    width: calc(100% + 3.75rem);
+}
+
+#door-8 .door-image {
+    margin-bottom: -0.625rem;
+}
+
+@media (min-width: 30rem) {
+    #doors {
+        padding: 2rem 0.5rem 0;
+
+        > li {
+            padding: 0 0.5rem;
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    #doors {
+        padding: 2rem 1rem 0;
+
+        > li {
+            width: 33.333333333%;
+        }
+    }
+}
+
+@media (min-width: 70rem) {
+    #doors > li {
+        padding: 0 1rem;
+        width: 25%;
+    }
+}
