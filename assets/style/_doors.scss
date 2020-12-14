@@ -24,8 +24,8 @@
 
 a.door {
     color: inherit;
-    transition: color $transition-duration;
     text-decoration: none;
+    transition: color $transition-duration;
 
     &:hover,
     &:focus {
