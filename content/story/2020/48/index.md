@@ -1,7 +1,7 @@
 +++
 date = 2020-12-14T01:15:00Z
 images = ["/uploads/nancy_shi.jpg"]
-schools = ["Highline Public Schools"]
+schools = ["Highline Public Schools", "University of Pittsburgh"]
 slug = "teachers-students-valued-who-they-are"
 title = "One day, I hope teachers and students will be valued for who they are, not for who society wants them to be"
 [educator]
