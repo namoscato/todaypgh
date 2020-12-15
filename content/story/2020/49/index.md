@@ -1,10 +1,9 @@
 +++
-date = 2020-12-15T00:41:28Z
-draft = true
+date = 2020-12-15T01:00:00Z
 images = ["/uploads/jeffrey-patrick.jpg"]
-schools = ["Propel Schools"]
-slug = ""
-title = "index"
+schools = ["Propel Schools", "Grand Canyon University", "University of Pittsburgh"]
+slug = "education-single-most-valued-part-society"
+title = "One day, I hope that education becomes the single most valued part of our society"
 [educator]
 is_student = false
 name = "Mr. Jeffrey Patrick"
@@ -13,7 +12,7 @@ role = "Technology Educator"
 facebook = ""
 instagram = ""
 linkedin = ""
-twitter = ""
+twitter = "jeffreypatrick_"
 website = ""
 
 +++
