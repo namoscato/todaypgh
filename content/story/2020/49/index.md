@@ -16,6 +16,8 @@ twitter = "jeffreypatrick_"
 website = ""
 
 +++
+
+{{< figure src="innovation.png" alt="Innovation" class="story-figure story-figure-innovation" >}}
 #### **What is your educational background?**
 
 The University of Pittsburgh BA in History
