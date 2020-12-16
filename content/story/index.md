@@ -3,7 +3,7 @@ date = 2020-12-16T00:27:36Z
 images = ["/uploads/colleen-anna.jpg"]
 schools = []
 slug = ""
-title = "index"
+title = "One day, I hope all students have the resources and support to find their own passions"
 [educator]
 is_student = false
 name = "Mrs. Colleen Anna"
