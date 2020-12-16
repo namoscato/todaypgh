@@ -16,13 +16,15 @@ twitter = ""
 website = ""
 
 +++
+{{< figure src="confidence.png" alt="Confidence" class="story-figure story-figure-confidence" >}}
+
 #### What is your educational background?
 
 I currently hold a bachelors of Math and Secondary Education Math from Penn State University and a Masters in Curriculum and Instruction from Purdue University.
 
 #### What or who inspired you to become an educator?
 
-From an early age, I loved school. I would take extra worksheets from my teachers and play school with my friends. In fact, I was always volunteering to help my teachers and classmates. Later on in Middle School, I realized that math came rather easy to me. However, I also came to the realization that this was not everyone’s experience. I continued to assist my friends and classmates in math, and I loved finding new ways to explain the concepts. The “Aha moments” when concepts finally clicked brought me great joy. 
+From an early age, I loved school. I would take extra worksheets from my teachers and play school with my friends. In fact, I was always volunteering to help my teachers and classmates. Later on in Middle School, I realized that math came rather easy to me. However, I also came to the realization that this was not everyone’s experience. I continued to assist my friends and classmates in math, and I loved finding new ways to explain the concepts. The “Aha moments” when concepts finally clicked brought me great joy.
 
 #### What is your current role? What other roles have you had in the sphere of education?
 
@@ -30,7 +32,7 @@ I am currently in my 4th year teaching in Chesterfield, Virginia. I taught 8th g
 
 #### Why are you still in the field of education?
 
-I am in the field of education because I love what I do. I enjoy the challenge of finding and creating new ways to teach each math concept and creating engaging activities. While teaching virtually is hard, I like the challenge of finding how to make in-class activities digitally accessible. In addition, I greatly enjoy learning about new technology resources and teaching strategies to incorporate within the curriculum. I also love working with middle schoolers. My students grow  so much in one school year. The students begin to transform into confident and responsible learners as the year progresses. Many of my students start the year with this idea that they will not be able to learn mathematical concepts. For me, the most rewarding moments throughout the year are when my students begin to realize that they can become mathematical thinkers.  These lightbulb moments are the most rewarding moments for me. 
+I am in the field of education because I love what I do. I enjoy the challenge of finding and creating new ways to teach each math concept and creating engaging activities. While teaching virtually is hard, I like the challenge of finding how to make in-class activities digitally accessible. In addition, I greatly enjoy learning about new technology resources and teaching strategies to incorporate within the curriculum. I also love working with middle schoolers. My students grow  so much in one school year. The students begin to transform into confident and responsible learners as the year progresses. Many of my students start the year with this idea that they will not be able to learn mathematical concepts. For me, the most rewarding moments throughout the year are when my students begin to realize that they can become mathematical thinkers.  These lightbulb moments are the most rewarding moments for me.
 
 #### What injustices or inequalities do you see within the walls of your own school? What changes can you make to shift the field towards equity and justice?
 
