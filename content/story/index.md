@@ -2,7 +2,7 @@
 date = 2020-12-16T00:27:36Z
 images = ["/uploads/colleen-anna.jpg"]
 schools = []
-slug = ""
+slug = "students-have-resources-support-find-own-passions"
 title = "One day, I hope all students have the resources and support to find their own passions"
 [educator]
 is_student = false
