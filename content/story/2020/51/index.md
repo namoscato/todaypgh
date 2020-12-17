@@ -1,9 +1,9 @@
 +++
-date = 2020-12-16T23:54:57Z
+date = 2020-12-17T00:25:00Z
 images = ["/uploads/sarah-bachner-walters.jpg"]
 schools = []
-slug = ""
-title = "index"
+slug = "find-time-compassionately-listen-someones-story"
+title = "One day, I hope you find time to compassionately listen to someone’s story"
 [educator]
 is_student = false
 name = "Mrs. Sarah Bachner Walters"
