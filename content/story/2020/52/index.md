@@ -16,6 +16,8 @@ twitter = ""
 website = ""
 
 +++
+
+{{< figure src="joy-learning.png" alt="Joy & learning co-exist" class="story-figure story-figure-joy-learning" >}}
 #### What is your educational background?
 
 Gwynedd Mercy University, English Secondary Education; Administrative Leadership, MA (in progress)
