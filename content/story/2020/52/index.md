@@ -2,8 +2,8 @@
 date = 2020-12-18T00:06:35Z
 images = ["/uploads/ashlei_miller.jpg"]
 schools = ["Carmen Schools of Science and Technology", "Gwynedd Mercy University"]
-slug = ""
-title = "index"
+slug = "get-to-place-where-joy-learning-co-exist"
+title = "One day, I hope we get to a place where joy and learning co-exist"
 [educator]
 is_student = false
 name = "Ms. Ashlei Miller"
