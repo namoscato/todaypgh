@@ -16,6 +16,9 @@ twitter = ""
 website = ""
 
 +++
+
+{{< figure src="remember-why-started.png" alt="Remember why you started" class="story-figure story-figure-remember-why-started" >}}
+
 #### What is your educational background?
 
 Master of Arts in Teaching from Michigan State University (2018), Bachelor of Arts in Mathematics from Michigan State University (2014), North Allegheny High School (2010)
