@@ -9,6 +9,7 @@ stories:
 - /story/2020/50
 - /story/2020/51
 - /story/2020/52
+- /story/2020/53
 ---
 
 Beauty is endless. Variations of hope are as intricate as snowflakes. Journey through ten doors, ten stories, ten days of hope…
