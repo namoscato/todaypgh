@@ -2,8 +2,8 @@
 date = 2020-12-21T02:15:54Z
 images = ["/uploads/isaac_frank.jpg"]
 schools = ["Ferndale Public Schools", "Michigan State University"]
-slug = ""
-title = "index"
+slug = "hope-world-where-we-all-care-each-other"
+title = "One day, I hope for a world where we all care for each other"
 [educator]
 is_student = false
 name = "Mr. Isaac Frank"
