@@ -2,8 +2,8 @@
 date = 2020-12-22T02:00:50Z
 images = ["/uploads/anna-arlotta-guerrero.jpg"]
 schools = ["University of Pittsburgh"]
-slug = ""
-title = "index"
+slug = "positive-movements-bring-understanding-truth-people"
+title = "One day, I hope the positive movements that have occurred over these past years bring understanding and truth to people"
 [educator]
 is_student = false
 name = "Dr. Anna Arlotta-Guerrero"
@@ -13,7 +13,7 @@ facebook = ""
 instagram = ""
 linkedin = ""
 twitter = ""
-website = ""
+website = "https://www.education.pitt.edu"
 
 +++
 #### What is your educational background?
