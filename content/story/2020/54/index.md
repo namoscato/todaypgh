@@ -16,6 +16,9 @@ twitter = ""
 website = "https://www.education.pitt.edu"
 
 +++
+
+{{< figure src="embrace-the-journey.png" alt="Embrace the journey" class="story-figure story-figure-embrace-the-journey" >}}
+
 #### What is your educational background?
 
 I have a Ph.D. in Education from the University of Pittsburgh, M.Ed. in Reading and Bilingual Education from Texas Woman's University and  a B.A. in English Writing and Communications from the University of Pittsburgh.
