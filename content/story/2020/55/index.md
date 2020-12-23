@@ -1,9 +1,9 @@
 +++
 date = 2020-12-23T00:19:07Z
 images = ["/uploads/kim_sherwin.jpg"]
-schools = []
-slug = ""
-title = "index"
+schools = ["Wayne Central School District"]
+slug = "stakeholders-listen-value-insight-experience-teachers-students"
+title = "One day, I wish all stakeholders listen to each other and value the insight and experience of teachers and students"
 [educator]
 is_student = false
 name = "Mrs. Kim Sherwin Leous"
