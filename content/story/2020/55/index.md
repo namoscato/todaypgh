@@ -16,6 +16,9 @@ twitter = ""
 website = ""
 
 +++
+
+{{< figure src="children-dreams.png" alt="Children are their parent's dreams; tread lightly" class="story-figure story-figure-children-dreams" >}}
+
 #### What is your educational background?
 
 BS Elementary and Special Education from SUNY Geneseo and MS School Counseling from SUNY Oswego
