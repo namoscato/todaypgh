@@ -1,7 +1,7 @@
 +++
 date = 2020-12-28T13:33:21Z
 images = ["/uploads/mary-catherine-reljac.png"]
-schools = []
+schools = ["Fox Chapel Area School District", "University of Pittsburgh", "Carlow University", "Indiana University of Pennsylvania"]
 slug = ""
 title = "index"
 [educator]
