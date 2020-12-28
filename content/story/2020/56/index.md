@@ -2,8 +2,8 @@
 date = 2020-12-28T13:33:21Z
 images = ["/uploads/mary-catherine-reljac.png"]
 schools = ["Fox Chapel Area School District", "University of Pittsburgh", "Carlow University", "Indiana University of Pennsylvania"]
-slug = ""
-title = "index"
+slug = "inspired-help-others-compassionate-make-difference-their-corner-world"
+title = "One day, I hope that all are inspired to help others, to be compassionate, and to make a difference in their corner of the world"
 [educator]
 is_student = false
 name = "Dr. Mary Catherine Reljac"
