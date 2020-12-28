@@ -16,6 +16,9 @@ twitter = ""
 website = ""
 
 +++
+
+{{< figure src="creativity-takes-courage.png" alt="Creativity takes courage" class="story-figure story-figure-creativity-takes-courage" >}}
+
 #### What is your educational background?
 
 I am currently a senior at Indiana University of Pennsylvania(IUP). I am double majoring with a focus in Art Education and Studio Art.
