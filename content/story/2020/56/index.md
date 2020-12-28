@@ -16,6 +16,9 @@ twitter = "MCReljac"
 website = ""
 
 +++
+
+{{< figure src="inspire-others.png" alt="Inspire others" class="story-figure story-figure-inspire-others" >}}
+
 #### What is your educational background?
 
 I have a Bachelor of Science degree in music education from Indiana University of Pennsylvania, a Master of Science degree in educational leadership from Carlow College (University), a superintendent letter of eligibility from California University of Pennsylvania, and a Doctor of Education degree from The University of Pittsburgh.
