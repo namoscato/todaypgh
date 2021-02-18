@@ -48,6 +48,11 @@ p {
     display: none;
 }
 
+.gfm-embed-iframe {
+    max-height: 3.125rem;
+    max-width: 15rem;
+}
+
 #body {
     margin: 0 auto;
     max-width: 130rem;
