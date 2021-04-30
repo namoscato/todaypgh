@@ -1,6 +1,9 @@
 name: image
 on:
   pull_request:
+    paths:
+      - 'static/**/*.jpe?g'
+      - 'static/**/*.png'
 jobs:
   compress:
     runs-on: ubuntu-latest
