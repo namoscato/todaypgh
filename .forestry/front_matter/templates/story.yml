@@ -81,6 +81,7 @@ fields:
       section: schools
   description: Current employer and alma maters
 pages:
+- content/story/01.md
 - content/story/2020/40.md
 - content/story/2020/42.md
 - content/story/2020/43.md
