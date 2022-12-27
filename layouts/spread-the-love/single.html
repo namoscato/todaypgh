@@ -1,6 +1,6 @@
 {{ define "script" }}
 {{ $js := resources.Get "script/spread/share.js" | resources.Minify }}
-<script src="{{ $js.Permalink }}" defer></script>
+<script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}
 
 {{ define "main" }}
@@ -21,7 +21,7 @@
         {{ end -}}
     </ul>
     <div class="utl-text-center">
-        <a class="button" href="{{ (.Site.GetPage "/story").Permalink }}">
+        <a class="button" href="{{ (.Site.GetPage "/story").RelPermalink }}">
             Read more stories
             <span class="icon">↓</span>
         </a>

@@ -25,7 +25,7 @@
     </ul>
     {{ if gt (len $stories) 7 }}
     <div class="utl-text-center">
-        <a class="button" href="{{ (.Site.GetPage "/story").Permalink }}">
+        <a class="button" href="{{ (.Site.GetPage "/story").RelPermalink }}">
             Read more stories
             <span class="icon">↓</span>
         </a>
