@@ -1,7 +1,7 @@
 {{- with .Params.images -}}
-{{- index . 0 | absURL -}}
+{{- index . 0 | relURL -}}
 {{- else -}}
 {{- $images := $.Resources.ByType "image" -}}
 {{- $image := $images.GetMatch "*cover*" -}}
-{{- $image.Permalink -}}
+{{- $image.RelPermalink -}}
 {{- end -}}

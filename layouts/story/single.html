@@ -73,7 +73,7 @@
                 <ul class="story-meta-list">
                     {{ with .role }}<li>{{ . }}</li>{{ end }}
                     {{ with (index ($.GetTerms "schools") 0) -}}
-                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                     {{- end }}
                 </ul>
                 {{ with .contact }}
