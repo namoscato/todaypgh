@@ -1,4 +1,4 @@
-/* global $, atob, ga */
+/* global $, ga */
 ;(function () {
   let referrer = getUrlParam('r')
 
@@ -34,11 +34,11 @@
     ga('set', {
       campaignSource: referrerEmail || referrerName,
       campaignMedium: referrer.medium,
-      campaignName: 'spread-the-love'
+      campaignName: 'spread-the-love',
     })
   }
 
-  function getUrlParam (name) {
+  function getUrlParam(name) {
     const params = window.location.search.substring(1).split('&')
     let paramParts
     let i

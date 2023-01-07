@@ -11,7 +11,7 @@ if (!existsSync(storyDir)) {
   mkdirSync(storyDir)
 }
 
-const stories = readdirSync(storyDir).filter(name =>
+const stories = readdirSync(storyDir).filter((name) =>
   lstatSync(join(storyDir, name)).isDirectory()
 )
 const number = 1 + stories.length
