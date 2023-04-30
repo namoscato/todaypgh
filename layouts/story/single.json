@@ -23,7 +23,7 @@
                 "name": "Twitter"
             },
             "headline": {{ partial "story/title.html" . | jsonify }},
-            "image": {{ partial "story/cover-image.html" . | jsonify }},
+            "image": {{ partial "story/cover-image.html" . | absURL | jsonify }},
             "text": {{ printf "“%s…”\n\n– %s, %s @%s %s" .Title $educator.name $educator.role (delimit $mentionsTwitter " @") .Permalink | jsonify }}
         },
         {
@@ -35,7 +35,7 @@
                 "name": "Facebook"
             },
             "headline": {{ partial "story/title.html" . | jsonify }},
-            "image": {{ partial "story/cover-image.html" . | jsonify }},
+            "image": {{ partial "story/cover-image.html" . | absURL | jsonify }},
             "text": {{ printf "“%s…”\n\n– %s, %s\n\n@%s\n\n%s" .Title $educator.name $educator.role (delimit $mentionsFacebook "\n@") .Permalink | jsonify }}
         },
         {
@@ -47,7 +47,7 @@
                 "name": "Instagram"
             },
             "headline": {{ partial "story/title.html" . | jsonify }},
-            "image": {{ partial "story/cover-image.html" . | jsonify }},
+            "image": {{ partial "story/cover-image.html" . | absURL | jsonify }},
             "text": {{ printf "“%s…”\n\n– %s, %s\n\n@%s" .Title $educator.name $educator.role (delimit $mentionsInstagram " @") | jsonify }}
         }
     ]
