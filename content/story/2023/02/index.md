@@ -5,9 +5,6 @@ slug: "want-every-child-walks-through-doors-know-they-are-priority"
 educator:
     name: Mr. Sean Means
     role: History Educator
-    contact:
-        website: https://www.portraitsbysean.com
-        instagram: portraitsbysean
 ---
 
 #### What did your journey into education look like?
