@@ -2,6 +2,6 @@
 title: The Neighborhood Academy
 social:
     twitter: [TNA_Bulldogs]
-    facebook: [CalUofPA]
+    facebook: [theneighborhoodacademy]
     instagram: [tna_bulldogs]
 ---
