@@ -6,6 +6,10 @@ params:
   description: 'TodayPGH shares stories of Pittsburgh educators to inspire future generations, lift up the profession, and build bridges of empathy. The project transcends across school districts and grade levels, opening new windows into the field.'
   images:
     - img/feature.jpg
+  social:
+    facebook: TodayPGH
+    twitter: TodayPGH
+    instagram: todaypgh
 outputs:
   page:
     - HTML
@@ -15,7 +19,3 @@ disableKinds:
 taxonomies:
   school: schools
 googleAnalytics: G-ZWVHQ6W3QR
-Social:
-  facebook: TodayPGH
-  twitter: TodayPGH
-  instagram: todaypgh
