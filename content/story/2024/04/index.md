@@ -1,7 +1,7 @@
 ---
-title: "One day, I hope focus shifts towards what is best for students rather than what is best for parents"
+title: "One day, my hope for education is to teach the full potential of every student"
 date: 2024-07-20T11:21:03-04:00
-slug: "hope-focus-shifts-towards-students-rather-than-parents"
+slug: "hope-education-teach-full-potential-every-student"
 educator:
     name: Dr. Payal Mital
     role: Biology Educator
