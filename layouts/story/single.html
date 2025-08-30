@@ -34,14 +34,14 @@
 {{- end }}
 {{- end }}{{/* .IsPage */}}
 <meta property="og:site_name" content="{{ .Site.Params.title }}" />
-{{ with .Site.Social.facebook }}<meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />{{ end }}
+{{ with .Site.Params.Social.facebook }}<meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />{{ end }}
 
 {{/* https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/twitter_cards.html */ -}}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="{{ $image | absURL }}" />
 <meta name="twitter:title" {{ $title | printf "content=%q" | safeHTMLAttr }} />
 <meta name="twitter:description" content="{{ $description }}" />
-{{ with .Site.Social.twitter }}<meta name="twitter:site" content="@{{ . }}"/>{{ end }}
+{{ with .Site.Params.Social.twitter }}<meta name="twitter:site" content="@{{ . }}"/>{{ end }}
 {{ with .Params.educator.contact.twitter }}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
 {{ end }}
 
