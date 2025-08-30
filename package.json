@@ -1,7 +1,10 @@
 {
-    "name": "one-day-today",
+    "name": "todaypgh",
     "version": "0.1.0",
     "description": "Inspirational Stories of Pittsburgh Educators",
+    "engines": {
+        "node": ">=22.x <23"
+    },
     "scripts": {
         "lint": "run-p lint-*",
         "lint-format": "prettier-standard --lint --check",
@@ -19,6 +22,5 @@
         "prettier-standard": "^16.4.1",
         "stylelint": "^14.16.1",
         "stylelint-config-sass-guidelines": "^9.0.1"
-    },
-    "dependencies": {}
+    }
 }
